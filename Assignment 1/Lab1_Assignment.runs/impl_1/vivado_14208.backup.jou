@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Feb  1 22:40:03 2024
+# Process ID: 14208
+# Current directory: D:/Clarence/Documents/EE2026/Lab1_Assignment/Lab1_Assignment.runs/impl_1
+# Command line: vivado.exe -log assignment.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source assignment.tcl -notrace
+# Log file: D:/Clarence/Documents/EE2026/Lab1_Assignment/Lab1_Assignment.runs/impl_1/assignment.vdi
+# Journal file: D:/Clarence/Documents/EE2026/Lab1_Assignment/Lab1_Assignment.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source assignment.tcl -notrace

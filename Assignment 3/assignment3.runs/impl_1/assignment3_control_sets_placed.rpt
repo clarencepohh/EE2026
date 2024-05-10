@@ -1,0 +1,83 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Feb 24 15:39:09 2024
+| Host         : DESKTOP-BT3RTOA running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file assignment3_control_sets_placed.rpt
+| Design       : assignment3
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    15 |
+| Unused register locations in slices containing registers |    38 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            1 |
+|      8 |            3 |
+|     10 |            1 |
+|    16+ |            9 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              58 |           20 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             390 |           51 |
+| Yes          | No                    | No                     |              42 |           10 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+-----------------------------------------------+-------------------------------+------------------+----------------+
+|     Clock Signal    |                 Enable Signal                 |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++---------------------+-----------------------------------------------+-------------------------------+------------------+----------------+
+|  clock100/clock100  |                                               |                               |                1 |              2 |
+|  nolabel_line50/CLK |                                               |                               |                1 |              4 |
+|  CLOCK_IBUF_BUFG    | button_handler/anB[3]_i_1_n_0                 |                               |                3 |              8 |
+|  CLOCK_IBUF_BUFG    | counterC/taskC_an_reg[0]                      |                               |                3 |              8 |
+|  clock1/CLK         |                                               |                               |                3 |              8 |
+|  CLOCK_IBUF_BUFG    | button_handler/FSM_onehot_step_num[4]_i_1_n_0 |                               |                1 |             10 |
+|  CLOCK_IBUF_BUFG    | counterA/E[0]                                 |                               |                3 |             16 |
+|  clock100/clock100  |                                               | checkerD/count[8]_i_1_n_0     |                3 |             18 |
+|  CLOCK_IBUF_BUFG    |                                               |                               |               15 |             44 |
+|  CLOCK_IBUF_BUFG    |                                               | clock100/COUNT[31]_i_1__1_n_0 |                8 |             62 |
+|  CLOCK_IBUF_BUFG    |                                               | clock10/COUNT[31]_i_1__0_n_0  |                8 |             62 |
+|  CLOCK_IBUF_BUFG    |                                               | clock1/COUNT[31]_i_1_n_0      |                8 |             62 |
+|  CLOCK_IBUF_BUFG    |                                               | clock200/COUNT[31]_i_1__4_n_0 |                8 |             62 |
+|  CLOCK_IBUF_BUFG    |                                               | clock20/COUNT[31]_i_1__3_n_0  |                8 |             62 |
+|  CLOCK_IBUF_BUFG    |                                               | clock2/COUNT[31]_i_1__2_n_0   |                8 |             62 |
++---------------------+-----------------------------------------------+-------------------------------+------------------+----------------+
+
+

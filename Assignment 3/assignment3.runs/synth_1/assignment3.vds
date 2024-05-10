@@ -1,0 +1,532 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Feb 24 15:37:36 2024
+# Process ID: 5440
+# Current directory: D:/Clarence/Documents/EE2026/assignment3/assignment3.runs/synth_1
+# Command line: vivado.exe -log assignment3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source assignment3.tcl
+# Log file: D:/Clarence/Documents/EE2026/assignment3/assignment3.runs/synth_1/assignment3.vds
+# Journal file: D:/Clarence/Documents/EE2026/assignment3/assignment3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source assignment3.tcl -notrace
+Command: synth_design -top assignment3 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5156 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 355.910 ; gain = 99.477
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'assignment3' [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/assignment3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_1hz' [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/clock_1hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_1hz' (1#1) [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/clock_1hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_2hz' [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/clock_2hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_2hz' (2#1) [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/clock_2hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_10hz' [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/clock_10hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_10hz' (3#1) [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/clock_10hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_20hz' [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/clock_20hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_20hz' (4#1) [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/clock_20hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_100hz' [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/clock_100hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_100hz' (5#1) [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/clock_100hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_200hz' [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/clock_200hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_200hz' (6#1) [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/clock_200hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (7#1) [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'led_A_handler' [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/led_A_handler.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/led_A_handler.v:30]
+WARNING: [Synth 8-6090] variable 'LEDS' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/led_A_handler.v:84]
+WARNING: [Synth 8-6090] variable 'LEDS' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/led_A_handler.v:85]
+WARNING: [Synth 8-6090] variable 'LEDS' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/led_A_handler.v:87]
+WARNING: [Synth 8-6090] variable 'LEDS' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/led_A_handler.v:88]
+WARNING: [Synth 8-6090] variable 'LEDS' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/led_A_handler.v:89]
+WARNING: [Synth 8-6090] variable 'LEDS' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/led_A_handler.v:91]
+WARNING: [Synth 8-6090] variable 'LEDS' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/led_A_handler.v:92]
+WARNING: [Synth 8-6090] variable 'LEDS' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/led_A_handler.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'led_A_handler' (8#1) [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/led_A_handler.v:23]
+INFO: [Synth 8-6157] synthesizing module 'taskB_buttons' [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/taskB_buttons.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'taskB_buttons' (9#1) [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/taskB_buttons.v:23]
+INFO: [Synth 8-6157] synthesizing module 'taskC_clockselector' [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/taskC_cycler.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'taskC_clockselector' (10#1) [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/taskC_cycler.v:23]
+INFO: [Synth 8-6157] synthesizing module 'taskC_counter' [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/taskC_counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'taskC_counter' (11#1) [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/taskC_counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'taskC_anodeswitcher' [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/taskC_anodeswitcher.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/taskC_anodeswitcher.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'taskC_anodeswitcher' (12#1) [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/taskC_anodeswitcher.v:23]
+INFO: [Synth 8-6157] synthesizing module 'taskD_checker' [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/taskD_checker.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'taskD_checker' (13#1) [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/taskD_checker.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'assignment3' (14#1) [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/assignment3.v:23]
+WARNING: [Synth 8-3331] design taskC_anodeswitcher has unconnected port B_complete
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 411.008 ; gain = 154.574
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 411.008 ; gain = 154.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 411.008 ; gain = 154.574
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Clarence/Desktop/assignment 3.xdc]
+Finished Parsing XDC File [C:/Users/Clarence/Desktop/assignment 3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Clarence/Desktop/assignment 3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/assignment3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/assignment3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 733.324 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 733.324 ; gain = 476.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 733.324 ; gain = 476.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 733.324 ; gain = 476.891
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock10" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock20" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock100" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock200" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock1000" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock2000" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'led15_control_reg' into 'B_complete_reg' [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/taskB_buttons.v:51]
+WARNING: [Synth 8-6014] Unused sequential element led15_control_reg was removed.  [D:/Clarence/Documents/EE2026/assignment3/assignment3.srcs/sources_1/new/taskB_buttons.v:51]
+INFO: [Synth 8-802] inferred FSM for state register 'step_num_reg' in module 'taskB_buttons'
+INFO: [Synth 8-5544] ROM "anB" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "D_active" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                            01000 |                             0000
+                  iSTATE |                            10000 |                             0001
+*
+                 iSTATE0 |                            00001 |                             0011
+                 iSTATE1 |                            00010 |                             0111
+                 iSTATE3 |                            00100 |                             1111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'step_num_reg' using encoding 'one-hot' in module 'taskB_buttons'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 733.324 ; gain = 476.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	  13 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      9 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   6 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 21    
+	  13 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module assignment3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module clock_1hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_2hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_10hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_20hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_100hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_200hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module led_A_handler 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  13 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+Module taskB_buttons 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module taskC_clockselector 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module taskC_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module taskC_anodeswitcher 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module taskD_checker 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "clock1/COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock1/clock10" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock2/COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock2/clock20" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock10/COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock10/clock100" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock20/COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock20/clock200" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock100/COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock100/clock1000" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock200/COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock200/clock2000" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "checkerD/D_active" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'switcherC/taskC_an_reg[1]' (FDE) to 'switcherC/taskC_seg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'switcherC/taskC_an_reg[2]' (FDE) to 'switcherC/taskC_seg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'switcherC/taskC_an_reg[3]' (FDE) to 'switcherC/taskC_seg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'switcherC/taskC_seg_reg[0]' (FDE) to 'switcherC/taskC_seg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'button_handler/segB_reg[0]' (FDSE) to 'button_handler/segB_reg[1]'
+INFO: [Synth 8-3886] merging instance 'switcherC/taskC_seg_reg[1]' (FDE) to 'switcherC/taskC_seg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'button_handler/segB_reg[1]' (FDSE) to 'button_handler/segB_reg[7]'
+INFO: [Synth 8-3886] merging instance 'switcherC/taskC_seg_reg[2]' (FDE) to 'switcherC/taskC_seg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'button_handler/segB_reg[2]' (FDSE) to 'button_handler/segB_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\switcherC/taskC_seg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\switcherC/taskC_seg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\button_handler/segB_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (button_handler/segB_reg[7]) is unused and will be removed from module assignment3.
+WARNING: [Synth 8-3332] Sequential element (switcherC/taskC_seg_reg[4]) is unused and will be removed from module assignment3.
+WARNING: [Synth 8-3332] Sequential element (switcherC/taskC_seg_reg[7]) is unused and will be removed from module assignment3.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 733.324 ; gain = 476.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 738.758 ; gain = 482.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 760.484 ; gain = 504.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 761.820 ; gain = 505.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 761.820 ; gain = 505.387
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 761.820 ; gain = 505.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 761.820 ; gain = 505.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 761.820 ; gain = 505.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 761.820 ; gain = 505.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 761.820 ; gain = 505.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    48|
+|3     |LUT1   |    10|
+|4     |LUT2   |    27|
+|5     |LUT3   |    20|
+|6     |LUT4   |    44|
+|7     |LUT5   |    27|
+|8     |LUT6   |    41|
+|9     |FDRE   |   245|
+|10    |IBUF   |     8|
+|11    |OBUF   |    24|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+--------------------+------+
+|      |Instance         |Module              |Cells |
++------+-----------------+--------------------+------+
+|1     |top              |                    |   495|
+|2     |  button_handler |taskB_buttons       |    46|
+|3     |  checkerD       |taskD_checker       |    28|
+|4     |  clock1         |clock_1hz           |    54|
+|5     |  clock10        |clock_10hz          |    55|
+|6     |  clock100       |clock_100hz         |    54|
+|7     |  clock2         |clock_2hz           |    55|
+|8     |  clock20        |clock_20hz          |    54|
+|9     |  clock200       |clock_200hz         |    56|
+|10    |  counterA       |counter             |    22|
+|11    |  counterC       |taskC_counter       |     7|
+|12    |  led_handler    |led_A_handler       |    24|
+|13    |  nolabel_line50 |taskC_clockselector |     1|
+|14    |  switcherC      |taskC_anodeswitcher |     6|
++------+-----------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 761.820 ; gain = 505.387
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 761.820 ; gain = 183.070
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 761.820 ; gain = 505.387
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+84 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 762.137 ; gain = 518.664
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Clarence/Documents/EE2026/assignment3/assignment3.runs/synth_1/assignment3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file assignment3_utilization_synth.rpt -pb assignment3_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 762.137 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 24 15:38:10 2024...

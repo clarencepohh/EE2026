@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Feb 24 15:37:36 2024
+# Process ID: 5440
+# Current directory: D:/Clarence/Documents/EE2026/assignment3/assignment3.runs/synth_1
+# Command line: vivado.exe -log assignment3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source assignment3.tcl
+# Log file: D:/Clarence/Documents/EE2026/assignment3/assignment3.runs/synth_1/assignment3.vds
+# Journal file: D:/Clarence/Documents/EE2026/assignment3/assignment3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source assignment3.tcl -notrace
