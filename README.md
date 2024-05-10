@@ -13,7 +13,7 @@ Grade breakdowns of the assignments were:
 - A3 (10%)
 
 Generally, assignments were quite simple, and could be done easily after following the lab tutor's instructions.
-The code in each assignment folder [A1](https://github.com/clarencepohh/EE2026/tree/main/Assignment%201) [A2](https://github.com/clarencepohh/EE2026/tree/main/Assignment%202) [A3](https://github.com/clarencepohh/EE2026/tree/main/Assignment%203) are my submissions. 
+The code in each assignment folder: [A1](https://github.com/clarencepohh/EE2026/tree/main/Assignment%201), [A2](https://github.com/clarencepohh/EE2026/tree/main/Assignment%202), and [A3](https://github.com/clarencepohh/EE2026/tree/main/Assignment%203) are my submissions. 
 I scored full marks for all three assignments. 
 
 ## Verilog Evaluation
