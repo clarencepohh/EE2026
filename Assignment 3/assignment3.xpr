@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="C:/Users/Clarence/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-780-DESKTOP-BT3RTOA/PrjAr/_X_/assignment3.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/clare/Documents/NUS Stuff/Y2S2/EE2026/github/EE2026/Assignment 3/assignment3.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3526a50ff1e547a4ad6d8be1e4f87e3f"/>
@@ -21,6 +21,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
