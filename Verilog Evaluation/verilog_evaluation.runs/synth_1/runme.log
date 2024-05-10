@@ -1,0 +1,428 @@
+
+*** Running vivado
+    with args -log main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18592 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 356.422 ; gain = 99.504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flexible_clock' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/flexible_clock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'flexible_clock' (1#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/flexible_clock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'taskAhandler' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskAhandler.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'taskAhandler' (2#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskAhandler.v:41]
+INFO: [Synth 8-6157] synthesizing module 'taskBhandler' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskBhandler.v:23]
+INFO: [Synth 8-6157] synthesizing module 'leftgate' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/leftgate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'leftgatecounter' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/leftgatecounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'leftgatecounter' (3#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/leftgatecounter.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/leftgate.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'leftgate' (4#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/leftgate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rightgate' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/rightgate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rightgatecounter' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/rightgatecounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rightgatecounter' (5#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/rightgatecounter.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/rightgate.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'rightgate' (6#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/rightgate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'taskBhandler' (7#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskBhandler.v:23]
+INFO: [Synth 8-6157] synthesizing module 'taskChandler' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskChandler.v:26]
+INFO: [Synth 8-6157] synthesizing module 'taskC_segdisplay' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskC_segdisplay.v:32]
+INFO: [Synth 8-6157] synthesizing module 'taskCcounter' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskCcounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'taskCcounter' (8#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskCcounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'taskC_segdisplay' (9#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskC_segdisplay.v:32]
+WARNING: [Synth 8-6014] Unused sequential element btnd_pressed_reg was removed.  [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskChandler.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'taskChandler' (10#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskChandler.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'main' (11#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v:23]
+WARNING: [Synth 8-3331] design main has unconnected port sw[14]
+WARNING: [Synth 8-3331] design main has unconnected port sw[13]
+WARNING: [Synth 8-3331] design main has unconnected port sw[12]
+WARNING: [Synth 8-3331] design main has unconnected port sw[11]
+WARNING: [Synth 8-3331] design main has unconnected port sw[9]
+WARNING: [Synth 8-3331] design main has unconnected port sw[8]
+WARNING: [Synth 8-3331] design main has unconnected port sw[7]
+WARNING: [Synth 8-3331] design main has unconnected port sw[6]
+WARNING: [Synth 8-3331] design main has unconnected port sw[4]
+WARNING: [Synth 8-3331] design main has unconnected port sw[3]
+WARNING: [Synth 8-3331] design main has unconnected port sw[2]
+WARNING: [Synth 8-3331] design main has unconnected port sw[1]
+WARNING: [Synth 8-3331] design main has unconnected port btnu
+WARNING: [Synth 8-3331] design main has unconnected port btnc
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 411.984 ; gain = 155.066
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 411.984 ; gain = 155.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 411.984 ; gain = 155.066
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Clarence/Desktop/Constraints File verilog eval.xdc]
+Finished Parsing XDC File [C:/Users/Clarence/Desktop/Constraints File verilog eval.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Clarence/Desktop/Constraints File verilog eval.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 744.426 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 744.426 ; gain = 487.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 744.426 ; gain = 487.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 744.426 ; gain = 487.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 744.426 ; gain = 487.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module main 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module flexible_clock 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module taskAhandler 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+Module leftgatecounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module leftgate 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      5 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module rightgatecounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module rightgate 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      7 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module taskCcounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module taskC_segdisplay 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+Module taskChandler 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element nolabel_line38/output_clock_reg was removed.  [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/flexible_clock.v:32]
+INFO: [Synth 8-5545] ROM "nolabel_line44/nolabel_line30/nolabel_line30/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line44/nolabel_line31/nolabel_line30/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line47/nolabel_line36/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line47/nolabel_line37/nolabel_line39/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design main has unconnected port sw[14]
+WARNING: [Synth 8-3331] design main has unconnected port sw[13]
+WARNING: [Synth 8-3331] design main has unconnected port sw[12]
+WARNING: [Synth 8-3331] design main has unconnected port sw[11]
+WARNING: [Synth 8-3331] design main has unconnected port sw[9]
+WARNING: [Synth 8-3331] design main has unconnected port sw[8]
+WARNING: [Synth 8-3331] design main has unconnected port sw[7]
+WARNING: [Synth 8-3331] design main has unconnected port sw[6]
+WARNING: [Synth 8-3331] design main has unconnected port sw[4]
+WARNING: [Synth 8-3331] design main has unconnected port sw[3]
+WARNING: [Synth 8-3331] design main has unconnected port sw[2]
+WARNING: [Synth 8-3331] design main has unconnected port sw[1]
+WARNING: [Synth 8-3331] design main has unconnected port btnu
+WARNING: [Synth 8-3331] design main has unconnected port btnc
+INFO: [Synth 8-3886] merging instance 'nolabel_line47/LEDout_reg[0]' (FD) to 'nolabel_line47/LEDout_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line47/LEDout_reg[1]' (FD) to 'nolabel_line47/LEDout_reg[15]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 744.426 ; gain = 487.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 744.426 ; gain = 487.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 757.195 ; gain = 500.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 758.387 ; gain = 501.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 758.387 ; gain = 501.469
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 758.387 ; gain = 501.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 758.387 ; gain = 501.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 758.387 ; gain = 501.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 758.387 ; gain = 501.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 758.387 ; gain = 501.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    32|
+|3     |LUT1   |     5|
+|4     |LUT2   |    29|
+|5     |LUT3   |    23|
+|6     |LUT4   |     7|
+|7     |LUT5   |     3|
+|8     |LUT6   |    49|
+|9     |FDRE   |   169|
+|10    |IBUF   |     8|
+|11    |OBUF   |    28|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------+-----------------+------+
+|      |Instance             |Module           |Cells |
++------+---------------------+-----------------+------+
+|1     |top                  |                 |   354|
+|2     |  nolabel_line44     |taskBhandler     |   158|
+|3     |    nolabel_line30   |leftgate         |    76|
+|4     |      nolabel_line30 |flexible_clock_2 |    56|
+|5     |      nolabel_line31 |leftgatecounter  |     7|
+|6     |    nolabel_line31   |rightgate        |    82|
+|7     |      nolabel_line30 |flexible_clock_1 |    55|
+|8     |      nolabel_line31 |rightgatecounter |     7|
+|9     |  nolabel_line47     |taskChandler     |   159|
+|10    |    nolabel_line36   |flexible_clock   |    56|
+|11    |    nolabel_line37   |taskC_segdisplay |    88|
+|12    |      nolabel_line39 |flexible_clock_0 |    55|
+|13    |      nolabel_line41 |taskCcounter     |     9|
++------+---------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 758.387 ; gain = 501.469
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 758.387 ; gain = 169.027
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 758.387 ; gain = 501.469
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 759.797 ; gain = 516.070
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 759.797 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 27 15:48:09 2024...

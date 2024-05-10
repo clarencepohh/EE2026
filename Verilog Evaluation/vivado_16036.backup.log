@@ -1,0 +1,869 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Mar 26 20:21:56 2024
+# Process ID: 16036
+# Current directory: C:/Users/Clarence/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6576
+# Log file: C:/Users/Clarence/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/Clarence/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project verilog_evaluation C:/Users/Clarence/Desktop/verilog_evaluation -part xc7a35tcpg236-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx-Vavado/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 769.250 ; gain = 66.980
+add_files -fileset constrs_1 -norecurse {{C:/Users/Clarence/Desktop/Constraints File verilog eval.xdc}}
+add_files -norecurse C:/Users/Clarence/Desktop/mergedABD/MODS/MODS.srcs/sources_1/new/flexible_clock.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Clarence/Desktop/mergedABD/MODS/MODS.srcs/sources_1/new/flexible_clock.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Clarence/Desktop/mergedABD/MODS/MODS.srcs/sources_1/new/flexible_clock.v
+file mkdir C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/flexible_clock.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/flexible_clock.v
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v
+update_compile_order -fileset sources_1
+set_property top main [current_fileset]
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/Clarence/Desktop/ee2026 assignment 2/Assignment2/Assignment2.srcs/sources_1/new/MSB_3_bit_adder.v} {C:/Users/Clarence/Desktop/ee2026 assignment 2/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v} {C:/Users/Clarence/Desktop/ee2026 assignment 2/Assignment2/Assignment2.srcs/sources_1/new/LSB_4_bit_adder.v} {C:/Users/Clarence/Desktop/ee2026 assignment 2/Assignment2/Assignment2.srcs/sources_1/new/assignment2.v}}
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/taskC_counter.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/assignment3.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/clock_200hz.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/clock_10hz.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/taskD_checker.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/clock_1hz.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/taskC_cycler.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/clock_100hz.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/taskB_buttons.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/led_A_handler.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/counter.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/clock_2hz.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/taskC_anodeswitcher.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/clock_20hz.v}}
+update_compile_order -fileset sources_1
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskAhandler.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskAhandler.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 26 21:29:02 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Tue Mar 26 21:29:02 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 827.098 ; gain = 0.582
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183715097A
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 26 21:37:11 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Tue Mar 26 21:37:11 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: main
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1624.125 ; gain = 117.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flexible_clock' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/flexible_clock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'flexible_clock' (1#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/flexible_clock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'taskAhandler' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskAhandler.v:40]
+WARNING: [Synth 8-3848] Net AN1 in module/entity taskAhandler does not have driver. [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskAhandler.v:41]
+WARNING: [Synth 8-3848] Net AN2 in module/entity taskAhandler does not have driver. [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskAhandler.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'taskAhandler' (2#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskAhandler.v:40]
+WARNING: [Synth 8-3848] Net SEG0 in module/entity main does not have driver. [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v:28]
+WARNING: [Synth 8-3848] Net SEG1 in module/entity main does not have driver. [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v:28]
+WARNING: [Synth 8-3848] Net SEG2 in module/entity main does not have driver. [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v:28]
+WARNING: [Synth 8-3848] Net SEG3 in module/entity main does not have driver. [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v:28]
+WARNING: [Synth 8-3848] Net SEG4 in module/entity main does not have driver. [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v:28]
+WARNING: [Synth 8-3848] Net SEG5 in module/entity main does not have driver. [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v:28]
+WARNING: [Synth 8-3848] Net SEG6 in module/entity main does not have driver. [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v:28]
+WARNING: [Synth 8-3848] Net SEG7 in module/entity main does not have driver. [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'main' (3#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v:23]
+WARNING: [Synth 8-3331] design taskAhandler has unconnected port AN1
+WARNING: [Synth 8-3331] design taskAhandler has unconnected port AN2
+WARNING: [Synth 8-3331] design main has unconnected port SEG0
+WARNING: [Synth 8-3331] design main has unconnected port SEG1
+WARNING: [Synth 8-3331] design main has unconnected port SEG2
+WARNING: [Synth 8-3331] design main has unconnected port SEG3
+WARNING: [Synth 8-3331] design main has unconnected port SEG4
+WARNING: [Synth 8-3331] design main has unconnected port SEG5
+WARNING: [Synth 8-3331] design main has unconnected port SEG6
+WARNING: [Synth 8-3331] design main has unconnected port SEG7
+WARNING: [Synth 8-3331] design main has unconnected port sw0
+WARNING: [Synth 8-3331] design main has unconnected port sw3
+WARNING: [Synth 8-3331] design main has unconnected port sw4
+WARNING: [Synth 8-3331] design main has unconnected port sw5
+WARNING: [Synth 8-3331] design main has unconnected port sw6
+WARNING: [Synth 8-3331] design main has unconnected port sw7
+WARNING: [Synth 8-3331] design main has unconnected port sw8
+WARNING: [Synth 8-3331] design main has unconnected port sw9
+WARNING: [Synth 8-3331] design main has unconnected port sw10
+WARNING: [Synth 8-3331] design main has unconnected port sw11
+WARNING: [Synth 8-3331] design main has unconnected port sw12
+WARNING: [Synth 8-3331] design main has unconnected port sw13
+WARNING: [Synth 8-3331] design main has unconnected port LED0
+WARNING: [Synth 8-3331] design main has unconnected port LED1
+WARNING: [Synth 8-3331] design main has unconnected port LED2
+WARNING: [Synth 8-3331] design main has unconnected port LED3
+WARNING: [Synth 8-3331] design main has unconnected port LED4
+WARNING: [Synth 8-3331] design main has unconnected port LED5
+WARNING: [Synth 8-3331] design main has unconnected port LED6
+WARNING: [Synth 8-3331] design main has unconnected port LED7
+WARNING: [Synth 8-3331] design main has unconnected port LED8
+WARNING: [Synth 8-3331] design main has unconnected port LED9
+WARNING: [Synth 8-3331] design main has unconnected port LED10
+WARNING: [Synth 8-3331] design main has unconnected port LED11
+WARNING: [Synth 8-3331] design main has unconnected port LED12
+WARNING: [Synth 8-3331] design main has unconnected port LED13
+WARNING: [Synth 8-3331] design main has unconnected port LED14
+WARNING: [Synth 8-3331] design main has unconnected port LED15
+WARNING: [Synth 8-3331] design main has unconnected port btnu
+WARNING: [Synth 8-3331] design main has unconnected port btnd
+WARNING: [Synth 8-3331] design main has unconnected port btnl
+WARNING: [Synth 8-3331] design main has unconnected port btnr
+WARNING: [Synth 8-3331] design main has unconnected port btnc
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1663.980 ; gain = 157.254
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1663.980 ; gain = 157.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1663.980 ; gain = 157.254
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Clarence/Desktop/Constraints File verilog eval.xdc]
+Finished Parsing XDC File [C:/Users/Clarence/Desktop/Constraints File verilog eval.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1990.840 ; gain = 484.113
+11 Infos, 53 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1990.840 ; gain = 484.113
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 26 21:42:53 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Tue Mar 26 21:42:53 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 26 21:51:25 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Tue Mar 26 21:51:25 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskBhandler.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskBhandler.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskBLEDhandler.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskBLEDhandler.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 26 22:29:52 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Tue Mar 26 22:29:52 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 26 22:34:59 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Tue Mar 26 22:34:59 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 26 22:37:41 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Tue Mar 26 22:37:41 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 26 22:47:59 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Tue Mar 26 22:47:59 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 26 22:51:34 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Tue Mar 26 22:51:34 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 26 23:01:20 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Tue Mar 26 23:01:20 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 26 23:07:58 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Tue Mar 26 23:07:58 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 26 23:08:02 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Tue Mar 26 23:08:02 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 26 23:11:01 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Tue Mar 26 23:11:01 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 26 23:18:50 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Tue Mar 26 23:18:50 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskChandler.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskChandler.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 26 23:48:59 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Tue Mar 26 23:48:59 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 26 23:54:10 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Tue Mar 26 23:54:10 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Mar 26 23:57:51 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Tue Mar 26 23:57:51 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 00:12:33 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 00:12:33 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 00:16:58 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 00:16:58 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 00:21:13 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 00:21:13 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 00:27:17 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 00:27:17 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 00:29:30 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 00:29:30 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2131.879 ; gain = 34.609
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flexible_clock' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/flexible_clock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'flexible_clock' (1#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/flexible_clock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'taskAhandler' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskAhandler.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'taskAhandler' (2#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskAhandler.v:41]
+INFO: [Synth 8-6157] synthesizing module 'taskBhandler' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskBhandler.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (3#1) [C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskBhandler.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'taskBhandler' (4#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskBhandler.v:23]
+INFO: [Synth 8-6157] synthesizing module 'taskChandler' [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskChandler.v:25]
+INFO: [Synth 8-6157] synthesizing module 'taskC_counter' [C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/taskC_counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'taskC_counter' (5#1) [C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/taskC_counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'taskChandler' (6#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskChandler.v:25]
+WARNING: [Synth 8-3848] Net taskC_anout in module/entity main does not have driver. [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'main' (7#1) [C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v:23]
+WARNING: [Synth 8-3331] design taskC_counter has unconnected port btnu_pressed
+WARNING: [Synth 8-3331] design taskAhandler has unconnected port taskA_anout[2]
+WARNING: [Synth 8-3331] design taskAhandler has unconnected port taskA_anout[1]
+WARNING: [Synth 8-3331] design main has unconnected port sw[13]
+WARNING: [Synth 8-3331] design main has unconnected port sw[12]
+WARNING: [Synth 8-3331] design main has unconnected port sw[11]
+WARNING: [Synth 8-3331] design main has unconnected port sw[10]
+WARNING: [Synth 8-3331] design main has unconnected port sw[9]
+WARNING: [Synth 8-3331] design main has unconnected port sw[8]
+WARNING: [Synth 8-3331] design main has unconnected port sw[7]
+WARNING: [Synth 8-3331] design main has unconnected port sw[6]
+WARNING: [Synth 8-3331] design main has unconnected port sw[5]
+WARNING: [Synth 8-3331] design main has unconnected port sw[4]
+WARNING: [Synth 8-3331] design main has unconnected port sw[3]
+WARNING: [Synth 8-3331] design main has unconnected port sw[0]
+WARNING: [Synth 8-3331] design main has unconnected port btnd
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2172.484 ; gain = 75.215
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2172.484 ; gain = 75.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2172.484 ; gain = 75.215
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Clarence/Desktop/Constraints File verilog eval.xdc]
+Finished Parsing XDC File [C:/Users/Clarence/Desktop/Constraints File verilog eval.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2193.035 ; gain = 95.766
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 00:40:31 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 00:40:31 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 00:44:00 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 00:44:00 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 00:48:20 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 00:48:20 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 00:53:35 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 00:53:35 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183715097A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183715097A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183715097A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183715097A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/leftgate.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/leftgate.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/leftgatecounter.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/leftgatecounter.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/rightgate.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/rightgate.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/rightgatecounter.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/rightgatecounter.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 15:12:34 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 15:12:34 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 15:14:28 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 15:14:28 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 15:14:56 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 15:14:56 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+update_compile_order -fileset sources_1
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskC_segdisplay.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskC_segdisplay.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskCcounter.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskCcounter.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 15:34:07 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 15:34:07 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 15:34:41 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 15:34:41 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 15:35:31 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 15:35:31 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 15:36:01 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 15:36:01 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 15:38:48 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 15:38:48 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 15:42:47 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 15:42:47 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 15:44:12 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 15:44:12 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 27 15:47:35 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/synth_1/runme.log
+[Wed Mar 27 15:47:35 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+archive_project C:/Users/Clarence/Desktop/A0254474Y.xpr.zip -temp_dir C:/Users/Clarence/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-16036-DESKTOP-BT3RTOA -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Clarence/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-16036-DESKTOP-BT3RTOA' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/Clarence/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-16036-DESKTOP-BT3RTOA/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

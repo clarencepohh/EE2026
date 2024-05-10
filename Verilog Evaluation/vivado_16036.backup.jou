@@ -1,0 +1,338 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Mar 26 20:21:56 2024
+# Process ID: 16036
+# Current directory: C:/Users/Clarence/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6576
+# Log file: C:/Users/Clarence/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/Clarence/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project verilog_evaluation C:/Users/Clarence/Desktop/verilog_evaluation -part xc7a35tcpg236-1
+add_files -fileset constrs_1 -norecurse {{C:/Users/Clarence/Desktop/Constraints File verilog eval.xdc}}
+add_files -norecurse C:/Users/Clarence/Desktop/mergedABD/MODS/MODS.srcs/sources_1/new/flexible_clock.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Clarence/Desktop/mergedABD/MODS/MODS.srcs/sources_1/new/flexible_clock.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Clarence/Desktop/mergedABD/MODS/MODS.srcs/sources_1/new/flexible_clock.v
+file mkdir C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/flexible_clock.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/flexible_clock.v
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/main.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top main [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/Clarence/Desktop/ee2026 assignment 2/Assignment2/Assignment2.srcs/sources_1/new/MSB_3_bit_adder.v} {C:/Users/Clarence/Desktop/ee2026 assignment 2/Assignment2/Assignment2.srcs/sources_1/new/one_bit_adder.v} {C:/Users/Clarence/Desktop/ee2026 assignment 2/Assignment2/Assignment2.srcs/sources_1/new/LSB_4_bit_adder.v} {C:/Users/Clarence/Desktop/ee2026 assignment 2/Assignment2/Assignment2.srcs/sources_1/new/assignment2.v}}
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/taskC_counter.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/assignment3.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/clock_200hz.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/clock_10hz.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/taskD_checker.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/clock_1hz.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/taskC_cycler.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/clock_100hz.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/taskB_buttons.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/led_A_handler.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/counter.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/clock_2hz.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/taskC_anodeswitcher.v} {C:/Users/Clarence/Desktop/ee2026 assignment 3/assignment3/assignment3.srcs/sources_1/new/clock_20hz.v}}
+update_compile_order -fileset sources_1
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskAhandler.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskAhandler.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskBhandler.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskBhandler.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskBLEDhandler.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskBLEDhandler.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskChandler.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskChandler.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/leftgate.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/leftgate.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/leftgatecounter.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/leftgatecounter.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/rightgate.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/rightgate.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/rightgatecounter.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/rightgatecounter.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+update_compile_order -fileset sources_1
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskC_segdisplay.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskC_segdisplay.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskCcounter.v w ]
+add_files C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.srcs/sources_1/new/taskCcounter.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Clarence/Desktop/verilog_evaluation/verilog_evaluation.runs/impl_1/main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+archive_project C:/Users/Clarence/Desktop/A0254474Y.xpr.zip -temp_dir C:/Users/Clarence/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-16036-DESKTOP-BT3RTOA -force -include_local_ip_cache -include_config_settings
