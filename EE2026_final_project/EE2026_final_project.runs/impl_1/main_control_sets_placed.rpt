@@ -1,0 +1,210 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Apr  6 22:06:22 2024
+| Host         : DESKTOP-K6H6OHD running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   140 |
+| Unused register locations in slices containing registers |   434 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           13 |
+|      6 |           11 |
+|      8 |           14 |
+|     10 |            4 |
+|     12 |           10 |
+|     14 |            1 |
+|    16+ |           87 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1050 |          305 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |            2448 |          321 |
+| Yes          | No                    | No                     |            2092 |          319 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              32 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+----------------+
+|                              Clock Signal                             |                                 Enable Signal                                |                               Set/Reset Signal                               | Slice Load Count | Bel Load Count |
++-----------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+----------------+
+|  nolabel_line245/JXADC_OBUF[2]                                        |                                                                              |                                                                              |                1 |              2 |
+|  clk25mhz_BUFG                                                        |                                                                              | oled_unit_A/oled_data1                                                       |                1 |              2 |
+|  nolabel_line166/clk_526                                              |                                                                              |                                                                              |                1 |              2 |
+|  nolabel_line167/clk_590                                              |                                                                              |                                                                              |                1 |              2 |
+|  nolabel_line168/clk_660                                              |                                                                              |                                                                              |                1 |              2 |
+|  nolabel_line169/clk_780                                              |                                                                              |                                                                              |                1 |              2 |
+|  nolabel_line170/clk_883                                              |                                                                              |                                                                              |                1 |              2 |
+|  nolabel_line171/clk_1050                                             |                                                                              |                                                                              |                1 |              2 |
+|  nolabel_line172/clk_1490                                             |                                                                              |                                                                              |                1 |              2 |
+|  clk25mhz_BUFG                                                        |                                                                              | oled_unit_A/oled_data1_2                                                     |                1 |              2 |
+|  clk25mhz_BUFG                                                        |                                                                              | oled_unit_A/oled_data1_4                                                     |                1 |              2 |
+|  clk25mhz_BUFG                                                        |                                                                              | oled_unit_A/oled_data1_0                                                     |                1 |              2 |
+| ~clk6p25mhz_BUFG                                                      |                                                                              |                                                                              |                1 |              2 |
+|  nolabel_line245/JXADC_OBUF[2]                                        | nolabel_line245/FSM_onehot_current_state[3]_i_1_n_0                          |                                                                              |                1 |              6 |
+|  p4_powerup/nolabel_line59/nolabel_line22/nolabel_line51/anodeClk/CLK |                                                                              |                                                                              |                3 |              6 |
+|  nolabel_line65/nolabel_line203/clk1hz_module/output_clock            |                                                                              |                                                                              |                1 |              6 |
+|  nolabel_line65/nolabel_line203/p1_dice/fiveHz/COUNTER_reg[2]         |                                                                              |                                                                              |                1 |              6 |
+|  nolabel_line65/nolabel_line203/p4_dice/fiveHz/COUNTER_reg[2]         |                                                                              |                                                                              |                2 |              6 |
+|  nolabel_line65/nolabel_line203/p2_dice/fiveHz/COUNTER_reg[2]         |                                                                              |                                                                              |                2 |              6 |
+|  p3_powerup/nolabel_line59/nolabel_line22/nolabel_line51/anodeClk/CLK |                                                                              |                                                                              |                2 |              6 |
+|  nolabel_line99/nolabel_line30/clk25mhz                               |                                                                              |                                                                              |                3 |              6 |
+|  p1_powerup/nolabel_line59/nolabel_line22/nolabel_line51/anodeClk/CLK |                                                                              |                                                                              |                1 |              6 |
+|  nolabel_line65/nolabel_line203/p3_dice/fiveHz/COUNTER_reg[2]         |                                                                              |                                                                              |                1 |              6 |
+|  p2_powerup/nolabel_line59/nolabel_line22/nolabel_line51/anodeClk/CLK |                                                                              |                                                                              |                2 |              6 |
+|  nolabel_line65/nolabel_line203/p1_dice/twentyFiveMHz/CLK             | nolabel_line65/nolabel_line203/p1_dice/nolabel_line62/E[0]                   |                                                                              |                4 |              8 |
+|  nolabel_line65/nolabel_line203/p2_dice/twentyFiveMHz/CLK             | nolabel_line65/nolabel_line203/p2_dice/nolabel_line62/E[0]                   |                                                                              |                3 |              8 |
+|  nolabel_line65/nolabel_line203/p3_dice/twentyFiveMHz/CLK             | nolabel_line65/nolabel_line203/p3_dice/nolabel_line62/E[0]                   |                                                                              |                3 |              8 |
+|  nolabel_line65/nolabel_line203/p4_dice/twentyFiveMHz/CLK             | nolabel_line65/nolabel_line203/p4_dice/nolabel_line62/E[0]                   |                                                                              |                2 |              8 |
+|  clk25mhz_BUFG                                                        |                                                                              | p4_powerup/nolabel_line56/oled_data_reg[4]_0                                 |                1 |              8 |
+|  clk25mhz_BUFG                                                        |                                                                              | p3_powerup/nolabel_line56/oled_data_reg[4]_0                                 |                1 |              8 |
+|  nolabel_line245/JXADC_OBUF[2]                                        | nolabel_line245/temp2                                                        |                                                                              |                2 |              8 |
+|  clk4hz                                                               | nolabel_line65/player4/diceroll_value[3]_i_1__2_n_0                          |                                                                              |                2 |              8 |
+|  clk4hz                                                               | nolabel_line65/player3/diceroll_value[3]_i_1__1_n_0                          |                                                                              |                2 |              8 |
+|  clk4hz                                                               | nolabel_line65/player1/diceroll_value[3]_i_1_n_0                             |                                                                              |                2 |              8 |
+|  clk25mhz_BUFG                                                        |                                                                              | p1_powerup/nolabel_line56/oled_data_reg[4]_0                                 |                1 |              8 |
+|  clk6p25mhz_BUFG                                                      |                                                                              |                                                                              |                3 |              8 |
+|  clk25mhz_BUFG                                                        |                                                                              | p2_powerup/nolabel_line56/oled_data_reg[4]_0                                 |                1 |              8 |
+|  clk4hz                                                               | nolabel_line65/player2/diceroll_value[3]_i_1__0_n_0                          |                                                                              |                2 |              8 |
+|  clk25mhz_BUFG                                                        | nolabel_line65/player2/E[0]                                                  |                                                                              |                2 |             10 |
+|  clk25mhz_BUFG                                                        | nolabel_line65/player1/oled_data_reg[15][0]                                  |                                                                              |                2 |             10 |
+|  clk25mhz_BUFG                                                        | nolabel_line65/player1/oled_data_reg[15]_0[0]                                |                                                                              |                2 |             10 |
+|  clk25mhz_BUFG                                                        | nolabel_line65/player1/oled_data_reg[15]_1[0]                                |                                                                              |                2 |             10 |
+|  nolabel_line65/nolabel_line203/p1_dice/twentyFiveMHz/CLK             |                                                                              |                                                                              |                2 |             12 |
+|  nolabel_line65/nolabel_line203/p1_dice/oneHz/COUNTER_reg[0]          |                                                                              |                                                                              |                2 |             12 |
+|  nolabel_line164/CLK                                                  |                                                                              |                                                                              |                2 |             12 |
+|  nolabel_line65/nolabel_line203/p3_dice/twentyFiveMHz/CLK             |                                                                              |                                                                              |                3 |             12 |
+|  nolabel_line65/nolabel_line203/p2_dice/twentyFiveMHz/CLK             |                                                                              |                                                                              |                2 |             12 |
+|  nolabel_line65/nolabel_line203/p3_dice/oneHz/COUNTER_reg[0]          |                                                                              |                                                                              |                2 |             12 |
+|  nolabel_line65/nolabel_line203/p2_dice/oneHz/COUNTER_reg[0]          |                                                                              |                                                                              |                1 |             12 |
+|  clk6p25mhz_BUFG                                                      |                                                                              | nolabel_line65/player4/oled_gameGrid_reg[15]_3                               |                3 |             12 |
+|  nolabel_line65/nolabel_line203/p4_dice/twentyFiveMHz/CLK             |                                                                              |                                                                              |                2 |             12 |
+|  nolabel_line65/nolabel_line203/p4_dice/oneHz/COUNTER_reg[0]          |                                                                              |                                                                              |                2 |             12 |
+|  nolabel_line100/nolabel_line28/CLK                                   |                                                                              |                                                                              |                6 |             14 |
+|  nolabel_line99/nolabel_line30/clk25mhz                               |                                                                              | sw1_IBUF                                                                     |                5 |             16 |
+|  nolabel_line203/clk2hz                                               | nolabel_line65/nolabel_line203/LD1_i_1_n_0                                   |                                                                              |                3 |             16 |
+|  CLOCK_IBUF_BUFG                                                      | nolabel_line65/nolabel_line203/p2_dice/nolabel_line62/counter[26]_i_1__0_n_0 |                                                                              |                4 |             22 |
+|  CLOCK_IBUF_BUFG                                                      | nolabel_line65/nolabel_line203/p4_dice/nolabel_line62/counter[26]_i_1__2_n_0 |                                                                              |                2 |             22 |
+|  CLOCK_IBUF_BUFG                                                      | nolabel_line65/nolabel_line203/p1_dice/nolabel_line62/counter[26]_i_1_n_0    |                                                                              |                2 |             22 |
+|  CLOCK_IBUF_BUFG                                                      | nolabel_line65/nolabel_line203/p3_dice/nolabel_line62/counter[26]_i_1__1_n_0 |                                                                              |                3 |             22 |
+|  nolabel_line245/JXADC_OBUF[2]                                        | nolabel_line245/temp2                                                        | nolabel_line245/FSM_onehot_current_state_reg_n_0_[0]                         |                3 |             32 |
+| ~clk6p25mhz_BUFG                                                      |                                                                              | oled_unit_A/frame_counter[16]_i_1_n_0                                        |                5 |             34 |
+| ~clk6p25mhz_BUFG                                                      | oled_unit_A/delay[0]_i_1_n_0                                                 |                                                                              |                5 |             40 |
+|  clk4hz                                                               | nolabel_line65/player1/player_topY[5]_i_1_n_0                                |                                                                              |               12 |             42 |
+|  clk4hz                                                               | nolabel_line65/player4/player_topY[5]_i_1__2_n_0                             |                                                                              |               10 |             42 |
+|  clk4hz                                                               | nolabel_line65/player2/player_topY[5]_i_1__0_n_0                             |                                                                              |                8 |             42 |
+|  clk4hz                                                               | nolabel_line65/player3/player_topY[5]_i_1__1_n_0                             |                                                                              |                7 |             44 |
+|  clk25mhz_BUFG                                                        | p1_powerup/nolabel_line59/nolabel_line22/debouncerD/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p3_powerup/nolabel_line59/nolabel_line22/debouncerL/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p3_powerup/nolabel_line59/nolabel_line22/debouncerR/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p4_powerup/nolabel_line59/nolabel_line22/debouncerD/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p1_powerup/nolabel_line56/nolabel_line45/debouncerR/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p1_powerup/nolabel_line59/nolabel_line22/debouncerC/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p2_powerup/nolabel_line59/nolabel_line22/debouncerR/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p3_powerup/nolabel_line56/nolabel_line45/debouncerC/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p1_powerup/nolabel_line56/nolabel_line45/debouncerL/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p1_powerup/nolabel_line59/nolabel_line22/debouncerL/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p1_powerup/nolabel_line59/nolabel_line22/debouncerR/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p1_powerup/nolabel_line56/nolabel_line45/debouncerC/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p1_powerup/nolabel_line56/nolabel_line45/debouncerD/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p3_powerup/nolabel_line56/nolabel_line45/debouncerL/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p3_powerup/nolabel_line56/nolabel_line45/debouncerR/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p4_powerup/nolabel_line59/nolabel_line22/debouncerC/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p4_powerup/nolabel_line59/nolabel_line22/debouncerL/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p4_powerup/nolabel_line59/nolabel_line22/debouncerR/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p4_powerup/nolabel_line56/nolabel_line45/debouncerC/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p4_powerup/nolabel_line56/nolabel_line45/debouncerD/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p4_powerup/nolabel_line56/nolabel_line45/debouncerL/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p4_powerup/nolabel_line56/nolabel_line45/debouncerR/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p2_powerup/nolabel_line56/nolabel_line45/debouncerL/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p2_powerup/nolabel_line59/nolabel_line22/debouncerC/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p2_powerup/nolabel_line59/nolabel_line22/debouncerD/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p2_powerup/nolabel_line59/nolabel_line22/debouncerL/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p2_powerup/nolabel_line56/nolabel_line45/debouncerC/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p2_powerup/nolabel_line56/nolabel_line45/debouncerD/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p2_powerup/nolabel_line56/nolabel_line45/debouncerR/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p3_powerup/nolabel_line56/nolabel_line45/debouncerD/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p3_powerup/nolabel_line59/nolabel_line22/debouncerC/count                    |                                                                              |                7 |             50 |
+|  clk25mhz_BUFG                                                        | p3_powerup/nolabel_line59/nolabel_line22/debouncerD/count                    |                                                                              |                7 |             50 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/p2_dice/nolabel_line62/counter[26]_i_1__0_n_0 |                7 |             52 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/p1_dice/nolabel_line62/counter[26]_i_1_n_0    |                7 |             52 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/p4_dice/nolabel_line62/counter[26]_i_1__2_n_0 |                7 |             52 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/p3_dice/nolabel_line62/counter[26]_i_1__1_n_0 |                7 |             52 |
+|  clk25mhz_BUFG                                                        |                                                                              | p3_powerup/nolabel_line59/nolabel_line22/nolabel_line51/anodeClk/clear       |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/p1_dice/oneHz/count[0]_i_1__1_n_0             |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/p1_dice/fiveHz/count[0]_i_1__0_n_0            |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line172/count[0]_i_1__30_n_0                                         |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/p2_dice/oneHz/count[0]_i_1__4_n_0             |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/clk2hz_module/clear                                           |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | clk25mhz_module/count[0]_i_1__21_n_0                                         |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | clk6p25mhz_module/count[0]_i_1__31_n_0                                       |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line163/clear                                                        |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line164/count[0]_i_1__22_n_0                                         |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line166/count[0]_i_1__24_n_0                                         |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line167/count[0]_i_1__25_n_0                                         |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line169/count[0]_i_1__27_n_0                                         |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line170/count[0]_i_1__28_n_0                                         |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line171/count[0]_i_1__29_n_0                                         |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line100/nolabel_line28/clear                                         |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line99/nolabel_line30/clear                                          |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/clk2hz_module/clear                           |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/clk1hz_module/count[0]_i_1__12_n_0            |                8 |             64 |
+| ~clk6p25mhz_BUFG                                                      | oled_unit_A/FSM_onehot_state[31]_i_1_n_0                                     |                                                                              |                9 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/p4_dice/twentyFiveMHz/clear                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/p4_dice/oneHz/count[0]_i_1__10_n_0            |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/p4_dice/fiveHz/count[0]_i_1__9_n_0            |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/p1_dice/twentyFiveMHz/clear                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/p3_dice/twentyFiveMHz/clear                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/p3_dice/oneHz/count[0]_i_1__7_n_0             |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/p3_dice/fiveHz/count[0]_i_1__6_n_0            |                8 |             64 |
+|  clk25mhz_BUFG                                                        |                                                                              | p1_powerup/nolabel_line59/nolabel_line22/nolabel_line51/anodeClk/clear       |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/p2_dice/twentyFiveMHz/clear                   |                8 |             64 |
+|  clk25mhz_BUFG                                                        |                                                                              | p4_powerup/nolabel_line59/nolabel_line22/nolabel_line51/anodeClk/clear       |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line168/count[0]_i_1__26_n_0                                         |                8 |             64 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              | nolabel_line65/nolabel_line203/p2_dice/fiveHz/count[0]_i_1__3_n_0            |                8 |             64 |
+|  clk25mhz_BUFG                                                        |                                                                              | p2_powerup/nolabel_line59/nolabel_line22/nolabel_line51/anodeClk/clear       |                8 |             64 |
+|  nolabel_line203/clk2hz                                               |                                                                              |                                                                              |               25 |             76 |
+| ~clk6p25mhz_BUFG                                                      |                                                                              | oled_unit_A/spi_word[39]_i_1_n_0                                             |               16 |             90 |
+|  CLOCK_IBUF_BUFG                                                      |                                                                              |                                                                              |               37 |             98 |
+|  clk4hz                                                               |                                                                              |                                                                              |               50 |            184 |
+|  clk25mhz_BUFG                                                        |                                                                              |                                                                              |              139 |            484 |
++-----------------------------------------------------------------------+------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+----------------+
+
+

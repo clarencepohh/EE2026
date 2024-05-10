@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2018.2 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="38" Path="C:/Users/clare/Documents/NUS Stuff/Y2S2/EE2026/different archives for final project/shitty final project EE/EE2026_final_project/EE2026_final_project.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="442882549c1d45e4812eb102443969a4"/>
+    <Option Name="Part" Val="xc7a35tcpg236-1"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="CompiledLibDirXSim" Val=""/>
+    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirXcelium" Val="$PCACHEDIR/compile_simlib/xcelium"/>
+    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
+    <Option Name="BoardPart" Val=""/>
+    <Option Name="ActiveSimSet" Val="sim_1"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
+    <Option Name="IPCachePermission" Val="read"/>
+    <Option Name="IPCachePermission" Val="write"/>
+    <Option Name="EnableCoreContainer" Val="FALSE"/>
+    <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
+    <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
+    <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
+    <Option Name="EnableBDX" Val="FALSE"/>
+    <Option Name="DSAVendor" Val="xilinx"/>
+    <Option Name="DSANumComputeUnits" Val="60"/>
+    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTModelSimLaunchSim" Val="0"/>
+    <Option Name="WTQuestaLaunchSim" Val="0"/>
+    <Option Name="WTIesLaunchSim" Val="0"/>
+    <Option Name="WTVcsLaunchSim" Val="0"/>
+    <Option Name="WTRivieraLaunchSim" Val="0"/>
+    <Option Name="WTActivehdlLaunchSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="0"/>
+    <Option Name="WTModelSimExportSim" Val="0"/>
+    <Option Name="WTQuestaExportSim" Val="0"/>
+    <Option Name="WTIesExportSim" Val="0"/>
+    <Option Name="WTVcsExportSim" Val="0"/>
+    <Option Name="WTRivieraExportSim" Val="0"/>
+    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
+    <Option Name="XSimRadix" Val="hex"/>
+    <Option Name="XSimTimeUnit" Val="ns"/>
+    <Option Name="XSimArrayDisplayLimit" Val="1024"/>
+    <Option Name="XSimTraceLimit" Val="65536"/>
+    <Option Name="SimTypes" Val="rtl"/>
+    <Option Name="SimTypes" Val="bfm"/>
+    <Option Name="SimTypes" Val="tlm"/>
+    <Option Name="SimTypes" Val="tlm_dpi"/>
+    <Option Name="MEMEnableMemoryMapGeneration" Val="TRUE"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/diceModules/MODS/MODS.srcs/sources_1/new/LFSR.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../Desktop/diceModules/MODS/MODS.srcs/sources_1/new/LFSR.v"/>
+          <Attr Name="ImportTime" Val="1712128877"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/Desktop/Oled_Display.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../Desktop/EE2026/FINAL_PROJECT1_EE2026/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v"/>
+          <Attr Name="ImportTime" Val="1710860899"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/anodeIdx.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../powerUps.xpr/MODS/MODS.srcs/sources_1/new/anodeIdx.v"/>
+          <Attr Name="ImportTime" Val="1712311242"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/boxChooser.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../powerUps.xpr/MODS/MODS.srcs/sources_1/new/boxChooser.v"/>
+          <Attr Name="ImportTime" Val="1712358963"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/counter1s.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/halfMergeProject EE/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/counter1s.v"/>
+          <Attr Name="ImportTime" Val="1712161580"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/counter2s.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/halfMergeProject EE/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/counter2s.v"/>
+          <Attr Name="ImportTime" Val="1712161525"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/diceModules/MODS/MODS.srcs/sources_1/new/counterFiveHz.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../Desktop/diceModules/MODS/MODS.srcs/sources_1/new/counterFiveHz.v"/>
+          <Attr Name="ImportTime" Val="1712128877"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/diceModules/MODS/MODS.srcs/sources_1/new/counterOneHz.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../Desktop/diceModules/MODS/MODS.srcs/sources_1/new/counterOneHz.v"/>
+          <Attr Name="ImportTime" Val="1712128877"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/debouncer.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../powerUps.xpr/MODS/MODS.srcs/sources_1/new/debouncer.v"/>
+          <Attr Name="ImportTime" Val="1712311242"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/diceModule.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/halfMergeProject EE/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/diceModule.v"/>
+          <Attr Name="ImportTime" Val="1712323153"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/flexible_clock.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../Desktop/EE2026/FINAL_PROJECT1_EE2026/MODS/MODS.srcs/sources_1/new/flexible_clock.v"/>
+          <Attr Name="ImportTime" Val="1711903993"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/gameOverScreen.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/halfMergeProject EE/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/gameOverScreen.v"/>
+          <Attr Name="ImportTime" Val="1712242370"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/gameState.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../Desktop/EE2026/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/gameState.v"/>
+          <Attr Name="ImportTime" Val="1711904034"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/pixel_index_to_cartesian.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../Desktop/EE2026/FINAL_PROJECT1_EE2026/MODS/MODS.srcs/sources_1/new/pixel_index_to_cartesian.v"/>
+          <Attr Name="ImportTime" Val="1710860902"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/player1_movementFSM.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../Desktop/EE2026/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player1_movementFSM.v"/>
+          <Attr Name="ImportTime" Val="1712118720"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/player2_movementFSM.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../Desktop/EE2026/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player2_movementFSM.v"/>
+          <Attr Name="ImportTime" Val="1712118705"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/player3_movementFSM.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../Desktop/EE2026/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player3_movementFSM.v"/>
+          <Attr Name="ImportTime" Val="1712118676"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/player4_movementFSM.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../Desktop/EE2026/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player4_movementFSM.v"/>
+          <Attr Name="ImportTime" Val="1712118678"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/powerUpIcons.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../powerUps.xpr/MODS/MODS.srcs/sources_1/new/powerUpIcons.v"/>
+          <Attr Name="ImportTime" Val="1712311242"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/powerUpMenu.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../powerUps.xpr/MODS/MODS.srcs/sources_1/new/powerUpMenu.v"/>
+          <Attr Name="ImportTime" Val="1712362914"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/printReviveMessage.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../powerUps.xpr/MODS/MODS.srcs/sources_1/new/printReviveMessage.v"/>
+          <Attr Name="ImportTime" Val="1712311242"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderDoubleDice.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderDoubleDice.v"/>
+          <Attr Name="ImportTime" Val="1712335162"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderDoubleJump.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderDoubleJump.v"/>
+          <Attr Name="ImportTime" Val="1712335164"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderPlayerBox.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderPlayerBox.v"/>
+          <Attr Name="ImportTime" Val="1712311242"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderReviveIcon.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderReviveIcon.v"/>
+          <Attr Name="ImportTime" Val="1712326962"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderSkipTurn.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderSkipTurn.v"/>
+          <Attr Name="ImportTime" Val="1712335163"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/reviveChoice.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../powerUps.xpr/MODS/MODS.srcs/sources_1/new/reviveChoice.v"/>
+          <Attr Name="ImportTime" Val="1712335169"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/reviveMenu.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../powerUps.xpr/MODS/MODS.srcs/sources_1/new/reviveMenu.v"/>
+          <Attr Name="ImportTime" Val="1712335169"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/segementChoiceDisplay.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../powerUps.xpr/MODS/MODS.srcs/sources_1/new/segementChoiceDisplay.v"/>
+          <Attr Name="ImportTime" Val="1712331259"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/selectPowerUp.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../powerUps.xpr/MODS/MODS.srcs/sources_1/new/selectPowerUp.v"/>
+          <Attr Name="ImportTime" Val="1712358963"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/simple_game_grid.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../Desktop/EE2026/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/simple_game_grid.v"/>
+          <Attr Name="ImportTime" Val="1711900826"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/soundCounter.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../soundCounter.v"/>
+          <Attr Name="ImportTime" Val="1712323641"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/startScreen.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/halfMergeProject EE/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/startScreen.v"/>
+          <Attr Name="ImportTime" Val="1712239811"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/topMessage.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../powerUps.xpr/MODS/MODS.srcs/sources_1/new/topMessage.v"/>
+          <Attr Name="ImportTime" Val="1712323097"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/variable_clk.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../powerUps.xpr/MODS/MODS.srcs/sources_1/new/variable_clk.v"/>
+          <Attr Name="ImportTime" Val="1712311243"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/winScreen.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Desktop/halfMergeProject EE/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/winScreen.v"/>
+          <Attr Name="ImportTime" Val="1712239643"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/everything/Audio_Output.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Stuff/School/y2s2/ee2026/final_project.xpr/final_project/final_project.srcs/sources_1/imports/Indiv_project/everything_together/everything/Audio_Output.vhd"/>
+          <Attr Name="ImportTime" Val="1712387210"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/main.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../Desktop/EE2026/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/main.v"/>
+          <Attr Name="ImportTime" Val="1711812529"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="main"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/imports/EE2026/Basys3_Master.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../Desktop/EE2026/Basys3_Master.xdc"/>
+          <Attr Name="ImportTime" Val="1711802688"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="main"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="Questa">
+      <Option Name="Description" Val="Questa Advanced Simulator"/>
+    </Simulator>
+    <Simulator Name="Riviera">
+      <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="10">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+  </Runs>
+  <Board/>
+</Project>

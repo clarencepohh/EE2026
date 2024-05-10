@@ -1,0 +1,2020 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Apr  6 21:59:48 2024
+# Process ID: 17164
+# Current directory: E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.runs/synth_1/main.vds
+# Journal file: E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13828 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 360.035 ; gain = 102.559
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/main.v:24]
+INFO: [Synth 8-6157] synthesizing module 'flexible_clock' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/sources_1/new/flexible_clock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'flexible_clock' (1#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/sources_1/new/flexible_clock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_index_to_cartesian' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/sources_1/new/pixel_index_to_cartesian.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_index_to_cartesian' (2#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/sources_1/new/pixel_index_to_cartesian.v:23]
+INFO: [Synth 8-6157] synthesizing module 'game_grid' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/simple_game_grid.v:119]
+INFO: [Synth 8-6157] synthesizing module 'player1_movementFSM' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player1_movementFSM.v:533]
+	Parameter IDLE bound to: 2'b00 
+	Parameter GET_DICE bound to: 2'b01 
+	Parameter MOVING bound to: 2'b10 
+	Parameter TURN_END bound to: 2'b11 
+WARNING: [Synth 8-6090] variable 'player1pos_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player1_movementFSM.v:574]
+WARNING: [Synth 8-6090] variable 'leftHomeCheck' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player1_movementFSM.v:575]
+INFO: [Synth 8-226] default block is never used [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player1_movementFSM.v:578]
+WARNING: [Synth 8-6090] variable 'player1pos_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player1_movementFSM.v:629]
+WARNING: [Synth 8-6090] variable 'player1pos_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player1_movementFSM.v:644]
+WARNING: [Synth 8-6090] variable 'player1pos_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player1_movementFSM.v:663]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player1_movementFSM.v:720]
+INFO: [Synth 8-6155] done synthesizing module 'player1_movementFSM' (3#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player1_movementFSM.v:533]
+INFO: [Synth 8-6157] synthesizing module 'player2_movementFSM' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player2_movementFSM.v:533]
+	Parameter IDLE bound to: 2'b00 
+	Parameter GET_DICE bound to: 2'b01 
+	Parameter MOVING bound to: 2'b10 
+	Parameter TURN_END bound to: 2'b11 
+WARNING: [Synth 8-6090] variable 'player2pos_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player2_movementFSM.v:574]
+WARNING: [Synth 8-6090] variable 'leftHomeCheck' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player2_movementFSM.v:575]
+INFO: [Synth 8-226] default block is never used [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player2_movementFSM.v:578]
+WARNING: [Synth 8-6090] variable 'player2pos_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player2_movementFSM.v:629]
+WARNING: [Synth 8-6090] variable 'player2pos_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player2_movementFSM.v:644]
+WARNING: [Synth 8-6090] variable 'player2pos_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player2_movementFSM.v:663]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player2_movementFSM.v:720]
+INFO: [Synth 8-6155] done synthesizing module 'player2_movementFSM' (4#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player2_movementFSM.v:533]
+INFO: [Synth 8-6157] synthesizing module 'player3_movementFSM' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player3_movementFSM.v:533]
+	Parameter IDLE bound to: 2'b00 
+	Parameter GET_DICE bound to: 2'b01 
+	Parameter MOVING bound to: 2'b10 
+	Parameter TURN_END bound to: 2'b11 
+WARNING: [Synth 8-6090] variable 'player3pos_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player3_movementFSM.v:574]
+WARNING: [Synth 8-6090] variable 'leftHomeCheck' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player3_movementFSM.v:575]
+INFO: [Synth 8-226] default block is never used [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player3_movementFSM.v:578]
+WARNING: [Synth 8-6090] variable 'player3pos_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player3_movementFSM.v:629]
+WARNING: [Synth 8-6090] variable 'player3pos_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player3_movementFSM.v:644]
+WARNING: [Synth 8-6090] variable 'player3pos_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player3_movementFSM.v:663]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player3_movementFSM.v:720]
+INFO: [Synth 8-6155] done synthesizing module 'player3_movementFSM' (5#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player3_movementFSM.v:533]
+INFO: [Synth 8-6157] synthesizing module 'player4_movementFSM' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player4_movementFSM.v:533]
+	Parameter IDLE bound to: 2'b00 
+	Parameter GET_DICE bound to: 2'b01 
+	Parameter MOVING bound to: 2'b10 
+	Parameter TURN_END bound to: 2'b11 
+WARNING: [Synth 8-6090] variable 'player4pos_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player4_movementFSM.v:574]
+WARNING: [Synth 8-6090] variable 'leftHomeCheck' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player4_movementFSM.v:575]
+INFO: [Synth 8-226] default block is never used [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player4_movementFSM.v:578]
+WARNING: [Synth 8-6090] variable 'player4pos_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player4_movementFSM.v:629]
+WARNING: [Synth 8-6090] variable 'player4pos_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player4_movementFSM.v:644]
+WARNING: [Synth 8-6090] variable 'player4pos_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player4_movementFSM.v:663]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player4_movementFSM.v:720]
+INFO: [Synth 8-6155] done synthesizing module 'player4_movementFSM' (6#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/player4_movementFSM.v:533]
+INFO: [Synth 8-6157] synthesizing module 'gameState' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/gameState.v:23]
+	Parameter START bound to: 4'b0000 
+	Parameter P1_DICE bound to: 4'b0001 
+	Parameter P1_MOVE bound to: 4'b0010 
+	Parameter P2_DICE bound to: 4'b0011 
+	Parameter P2_MOVE bound to: 4'b0100 
+	Parameter P3_DICE bound to: 4'b0101 
+	Parameter P3_MOVE bound to: 4'b0110 
+	Parameter P4_DICE bound to: 4'b0111 
+	Parameter P4_MOVE bound to: 4'b1000 
+	Parameter P1_WIN bound to: 4'b1001 
+	Parameter P2_WIN bound to: 4'b1010 
+	Parameter P3_WIN bound to: 4'b1011 
+	Parameter P4_WIN bound to: 4'b1100 
+	Parameter IDLE bound to: 4'b1111 
+INFO: [Synth 8-6157] synthesizing module 'counter1s' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/counter1s.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter1s' (7#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/counter1s.v:23]
+INFO: [Synth 8-6157] synthesizing module 'diceModule' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/diceModule.v:26]
+INFO: [Synth 8-6157] synthesizing module 'counterFiveHz' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Desktop/diceModules/MODS/MODS.srcs/sources_1/new/counterFiveHz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counterFiveHz' (8#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Desktop/diceModules/MODS/MODS.srcs/sources_1/new/counterFiveHz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counterOneHz' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Desktop/diceModules/MODS/MODS.srcs/sources_1/new/counterOneHz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counterOneHz' (9#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Desktop/diceModules/MODS/MODS.srcs/sources_1/new/counterOneHz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter2s' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/counter2s.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter2s' (10#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/counter2s.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LFSR' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Desktop/diceModules/MODS/MODS.srcs/sources_1/new/LFSR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LFSR' (11#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Desktop/diceModules/MODS/MODS.srcs/sources_1/new/LFSR.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/diceModule.v:153]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/diceModule.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'diceModule' (12#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/diceModule.v:26]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/gameState.v:132]
+WARNING: [Synth 8-6090] variable 'player1_lefthome' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/gameState.v:160]
+WARNING: [Synth 8-6090] variable 'player2_lefthome' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/gameState.v:160]
+WARNING: [Synth 8-6090] variable 'player3_lefthome' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/gameState.v:160]
+WARNING: [Synth 8-6090] variable 'player4_lefthome' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/gameState.v:160]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/gameState.v:152]
+INFO: [Synth 8-6155] done synthesizing module 'gameState' (13#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/gameState.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'game_grid' (14#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/simple_game_grid.v:119]
+INFO: [Synth 8-6157] synthesizing module 'powerUpMenu' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/powerUpMenu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'powerUpIcons' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/powerUpIcons.v:23]
+INFO: [Synth 8-6157] synthesizing module 'renderDoubleJump' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderDoubleJump.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'renderDoubleJump' (15#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderDoubleJump.v:23]
+INFO: [Synth 8-6157] synthesizing module 'renderDoubleDice' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderDoubleDice.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'renderDoubleDice' (16#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderDoubleDice.v:23]
+INFO: [Synth 8-6157] synthesizing module 'renderSkipTurn' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderSkipTurn.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'renderSkipTurn' (17#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderSkipTurn.v:23]
+INFO: [Synth 8-6157] synthesizing module 'renderPlayerBox' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderPlayerBox.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'renderPlayerBox' (18#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderPlayerBox.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'powerUpIcons' (19#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/powerUpIcons.v:23]
+INFO: [Synth 8-6157] synthesizing module 'selectPowerUp' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/selectPowerUp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'boxChooser' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/boxChooser.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (20#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/debouncer.v:23]
+WARNING: [Synth 8-6090] variable 'powerUps' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/boxChooser.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'boxChooser' (21#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/boxChooser.v:23]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/selectPowerUp.v:72]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/selectPowerUp.v:73]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/selectPowerUp.v:76]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/selectPowerUp.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'selectPowerUp' (22#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/selectPowerUp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'message' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/topMessage.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'message' (23#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/topMessage.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reviveMenu' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/reviveMenu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'reviveChoice' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/reviveChoice.v:23]
+INFO: [Synth 8-6157] synthesizing module 'segementChoiceDisplay' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/segementChoiceDisplay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'variable_clk' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/variable_clk.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'variable_clk' (24#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/variable_clk.v:23]
+INFO: [Synth 8-6157] synthesizing module 'anodeIdx' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/anodeIdx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'anodeIdx' (25#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/anodeIdx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'segementChoiceDisplay' (26#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/segementChoiceDisplay.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'reviveChoice' (27#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/reviveChoice.v:23]
+INFO: [Synth 8-6157] synthesizing module 'printReviveMessage' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/printReviveMessage.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'printReviveMessage' (28#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/printReviveMessage.v:23]
+INFO: [Synth 8-6157] synthesizing module 'renderReviveIcon' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderReviveIcon.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'renderReviveIcon' (29#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/renderReviveIcon.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'reviveMenu' (30#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/reviveMenu.v:3]
+WARNING: [Synth 8-3848] Net enemySelected in module/entity powerUpMenu does not have driver. [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/powerUpMenu.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'powerUpMenu' (31#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/powerUpMenu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/sources_1/imports/Desktop/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/sources_1/imports/Desktop/Oled_Display.v:123]
+INFO: [Synth 8-226] default block is never used [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/sources_1/imports/Desktop/Oled_Display.v:198]
+WARNING: [Synth 8-693] zero replication count - replication ignored [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/sources_1/imports/Desktop/Oled_Display.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (32#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/sources_1/imports/Desktop/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'startScreen' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/startScreen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'startScreen' (33#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/startScreen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'winScreen' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/winScreen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'winScreen' (34#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/winScreen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gameOverScreen' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/gameOverScreen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'gameOverScreen' (35#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/gameOverScreen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'soundCounter' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/soundCounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'soundCounter' (36#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/soundCounter.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/main.v:178]
+INFO: [Synth 8-638] synthesizing module 'Audio_Output' [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/everything/Audio_Output.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'Audio_Output' (37#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/everything/Audio_Output.vhd:63]
+INFO: [Synth 8-6155] done synthesizing module 'main' (38#1) [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/new/main.v:24]
+WARNING: [Synth 8-3331] design renderSkipTurn has unconnected port powerUps[3]
+WARNING: [Synth 8-3331] design renderSkipTurn has unconnected port powerUps[2]
+WARNING: [Synth 8-3331] design renderSkipTurn has unconnected port powerUps[1]
+WARNING: [Synth 8-3331] design renderSkipTurn has unconnected port powerUps[0]
+WARNING: [Synth 8-3331] design renderDoubleDice has unconnected port powerUps[3]
+WARNING: [Synth 8-3331] design renderDoubleDice has unconnected port powerUps[2]
+WARNING: [Synth 8-3331] design renderDoubleDice has unconnected port powerUps[1]
+WARNING: [Synth 8-3331] design renderDoubleDice has unconnected port powerUps[0]
+WARNING: [Synth 8-3331] design renderDoubleJump has unconnected port powerUps[3]
+WARNING: [Synth 8-3331] design renderDoubleJump has unconnected port powerUps[2]
+WARNING: [Synth 8-3331] design renderDoubleJump has unconnected port powerUps[1]
+WARNING: [Synth 8-3331] design renderDoubleJump has unconnected port powerUps[0]
+WARNING: [Synth 8-3331] design powerUpMenu has unconnected port enemySelected[2]
+WARNING: [Synth 8-3331] design powerUpMenu has unconnected port enemySelected[1]
+WARNING: [Synth 8-3331] design powerUpMenu has unconnected port enemySelected[0]
+WARNING: [Synth 8-3331] design gameState has unconnected port btnc
+WARNING: [Synth 8-3331] design gameState has unconnected port btnl
+WARNING: [Synth 8-3331] design gameState has unconnected port btnr
+WARNING: [Synth 8-3331] design gameState has unconnected port btnd
+WARNING: [Synth 8-3331] design gameState has unconnected port p1_skipSelected
+WARNING: [Synth 8-3331] design gameState has unconnected port p1_doubleJumpSelected
+WARNING: [Synth 8-3331] design gameState has unconnected port p2_skipSelected
+WARNING: [Synth 8-3331] design gameState has unconnected port p2_doubleJumpSelected
+WARNING: [Synth 8-3331] design gameState has unconnected port p3_skipSelected
+WARNING: [Synth 8-3331] design gameState has unconnected port p3_doubleJumpSelected
+WARNING: [Synth 8-3331] design gameState has unconnected port p4_skipSelected
+WARNING: [Synth 8-3331] design gameState has unconnected port p4_doubleJumpSelected
+WARNING: [Synth 8-3331] design game_grid has unconnected port LD[15]
+WARNING: [Synth 8-3331] design game_grid has unconnected port LD[14]
+WARNING: [Synth 8-3331] design game_grid has unconnected port LD[13]
+WARNING: [Synth 8-3331] design game_grid has unconnected port LD[12]
+WARNING: [Synth 8-3331] design game_grid has unconnected port LD[11]
+WARNING: [Synth 8-3331] design game_grid has unconnected port LD[10]
+WARNING: [Synth 8-3331] design game_grid has unconnected port LD[9]
+WARNING: [Synth 8-3331] design game_grid has unconnected port playerAffected[2]
+WARNING: [Synth 8-3331] design game_grid has unconnected port playerAffected[1]
+WARNING: [Synth 8-3331] design game_grid has unconnected port playerAffected[0]
+WARNING: [Synth 8-3331] design game_grid has unconnected port endP1Revive
+WARNING: [Synth 8-3331] design game_grid has unconnected port endP2Revive
+WARNING: [Synth 8-3331] design game_grid has unconnected port endP3Revive
+WARNING: [Synth 8-3331] design game_grid has unconnected port endP4Revive
+WARNING: [Synth 8-3331] design game_grid has unconnected port sw7
+WARNING: [Synth 8-3331] design main has unconnected port JC[2]
+WARNING: [Synth 8-3331] design main has unconnected port sw8
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 660.125 ; gain = 402.648
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 660.125 ; gain = 402.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 660.125 ; gain = 402.648
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/constrs_1/imports/EE2026/Basys3_Master.xdc]
+Finished Parsing XDC File [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/constrs_1/imports/EE2026/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/constrs_1/imports/EE2026/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 3844.180 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 3859.875 ; gain = 3602.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 3859.875 ; gain = 3602.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 3859.875 ; gain = 3602.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "p1Win" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p2Win" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p3Win" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p4Win" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "lfsr_reg" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "animationDone" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "activate_dice_spin" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "player1_lefthome" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "player2_lefthome" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "player3_lefthome" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "player4_lefthome" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_gameGrid" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_gameGrid" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_gameGrid" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_gameGrid" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "powerUps" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "idx" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "slow_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "toReviveChoice" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "skipSelected" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "skipSelected" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "doubleDiceSelected" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "doubleJumpSelected" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Audio_Output'
+INFO: [Synth 8-5544] ROM "DONE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'audio1_reg' in module 'main'
+INFO: [Synth 8-802] inferred FSM for state register 'audio2_reg' in module 'main'
+INFO: [Synth 8-802] inferred FSM for state register 'audio3_reg' in module 'main'
+INFO: [Synth 8-802] inferred FSM for state register 'audio4_reg' in module 'main'
+INFO: [Synth 8-802] inferred FSM for state register 'audio5_reg' in module 'main'
+INFO: [Synth 8-802] inferred FSM for state register 'audio6_reg' in module 'main'
+INFO: [Synth 8-802] inferred FSM for state register 'audio7_reg' in module 'main'
+INFO: [Synth 8-5546] ROM "audio_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "audio10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "audio20" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "audio30" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "audio40" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "audio50" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "audio60" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "audio70" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "audio_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "audio10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "audio20" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "audio30" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "audio40" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "audio50" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "audio60" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "audio70" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                shiftout |                             0010 |                               01
+                syncdata |                             0100 |                               10
+                  iSTATE |                             1000 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'Audio_Output'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                     000000000000
+                  iSTATE |                                1 |                     010000000000
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'audio1_reg' using encoding 'sequential' in module 'main'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                     000000000000
+                  iSTATE |                                1 |                     010000000000
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'audio2_reg' using encoding 'sequential' in module 'main'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                     000000000000
+                  iSTATE |                                1 |                     010000000000
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'audio3_reg' using encoding 'sequential' in module 'main'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                     000000000000
+                  iSTATE |                                1 |                     010000000000
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'audio4_reg' using encoding 'sequential' in module 'main'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                     000000000000
+                  iSTATE |                                1 |                     010000000000
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'audio5_reg' using encoding 'sequential' in module 'main'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                     000000000000
+                  iSTATE |                                1 |                     010000000000
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'audio6_reg' using encoding 'sequential' in module 'main'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                     000000000000
+                  iSTATE |                                1 |                     010000000000
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'audio7_reg' using encoding 'sequential' in module 'main'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:58 . Memory (MB): peak = 3859.875 ; gain = 3602.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'clk25mhz_module' (flexible_clock) to 'nolabel_line162'
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |powerUpMenu   |           4|     35998|
+|2     |game_grid     |           1|     47926|
+|3     |main__GCB1    |           1|     11574|
+|4     |main__GCB2    |           1|     13470|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 4     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 5     
+	   2 Input      3 Bit       Adders := 37    
+	   2 Input      2 Bit       Adders := 8     
+	   2 Input      1 Bit       Adders := 8     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               27 Bit    Registers := 4     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 54    
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 12    
+	                7 Bit    Registers := 8     
+	                6 Bit    Registers := 6     
+	                4 Bit    Registers := 22    
+	                3 Bit    Registers := 37    
+	                2 Bit    Registers := 16    
+	                1 Bit    Registers := 253   
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 4     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 37    
+	   2 Input     16 Bit        Muxes := 62    
+	  14 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 12    
+	   5 Input     16 Bit        Muxes := 16    
+	   9 Input     16 Bit        Muxes := 4     
+	   8 Input     16 Bit        Muxes := 4     
+	  22 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 4     
+	   4 Input     12 Bit        Muxes := 4     
+	  15 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	  64 Input      8 Bit        Muxes := 8     
+	   3 Input      8 Bit        Muxes := 1     
+	  64 Input      7 Bit        Muxes := 3     
+	   4 Input      6 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 34    
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 91    
+	  64 Input      4 Bit        Muxes := 4     
+	  14 Input      4 Bit        Muxes := 4     
+	   3 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 53    
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 107   
+	   6 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 481   
+	   4 Input      1 Bit        Muxes := 101   
+	  64 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 8     
+	  14 Input      1 Bit        Muxes := 69    
+	   3 Input      1 Bit        Muxes := 46    
+	   6 Input      1 Bit        Muxes := 4     
+	  15 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module main 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 7     
+	  15 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	  15 Input      1 Bit        Muxes := 1     
+Module flexible_clock__19 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module player1_movementFSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	  64 Input      8 Bit        Muxes := 2     
+	  64 Input      7 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	  64 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 19    
+	   2 Input      1 Bit        Muxes := 17    
+	  64 Input      1 Bit        Muxes := 3     
+Module player2_movementFSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	  64 Input      8 Bit        Muxes := 2     
+	  64 Input      7 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	  64 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 19    
+	   2 Input      1 Bit        Muxes := 17    
+	  64 Input      1 Bit        Muxes := 3     
+Module player3_movementFSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	  64 Input      8 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	  64 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 19    
+	   2 Input      1 Bit        Muxes := 17    
+	  64 Input      1 Bit        Muxes := 3     
+Module player4_movementFSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	  64 Input      8 Bit        Muxes := 2     
+	  64 Input      7 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	  64 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 19    
+	   2 Input      1 Bit        Muxes := 17    
+	  64 Input      1 Bit        Muxes := 3     
+Module flexible_clock__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module counter1s 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module counterFiveHz__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module counterOneHz__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module counter2s__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module flexible_clock__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module LFSR__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module diceModule__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 2     
+Module counterFiveHz__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module counterOneHz__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module counter2s__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module flexible_clock__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module LFSR__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module diceModule__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 2     
+Module counterFiveHz__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module counterOneHz__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module counter2s__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module flexible_clock__18 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module LFSR__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module diceModule__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 2     
+Module counterFiveHz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module counterOneHz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module counter2s 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module flexible_clock__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module LFSR 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module diceModule 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 2     
+Module gameState 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 5     
+	                1 Bit    Registers := 38    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 34    
+	  14 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	  14 Input      1 Bit        Muxes := 69    
+	   2 Input      1 Bit        Muxes := 24    
+Module game_grid 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+	  14 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+Module renderDoubleJump 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+Module renderDoubleDice 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+Module renderSkipTurn 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+Module renderPlayerBox 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+Module powerUpIcons 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+Module debouncer__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module debouncer__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module debouncer__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module boxChooser 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 9     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module selectPowerUp 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 6     
+	   4 Input     16 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 1     
+Module message 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     16 Bit        Muxes := 2     
+	   9 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module debouncer__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module debouncer__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module debouncer__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module debouncer__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module variable_clk 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module anodeIdx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 3     
+Module segementChoiceDisplay 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 10    
+Module reviveChoice 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+Module printReviveMessage 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+Module renderReviveIcon 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     16 Bit        Muxes := 1     
+Module reviveMenu 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module powerUpMenu 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 4     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module flexible_clock__20 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module startScreen 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  22 Input     16 Bit        Muxes := 1     
+Module flexible_clock__22 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module winScreen 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   7 Input     16 Bit        Muxes := 1     
+Module flexible_clock__21 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module gameOverScreen 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     16 Bit        Muxes := 1     
+Module flexible_clock__23 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__24 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__25 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__26 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__27 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__28 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__29 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__30 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__31 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module soundCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+Module Audio_Output 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__32 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock__33 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flexible_clock 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element sixPointFiveMHz/output_clock_reg was removed.  [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/sources_1/new/flexible_clock.v:32]
+INFO: [Synth 8-5544] ROM "animationDone" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "activate_dice_spin" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "twentyFiveMHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fiveHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oneHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element sixPointFiveMHz/output_clock_reg was removed.  [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/sources_1/new/flexible_clock.v:32]
+INFO: [Synth 8-5544] ROM "animationDone" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "activate_dice_spin" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "twentyFiveMHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fiveHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oneHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element sixPointFiveMHz/output_clock_reg was removed.  [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/sources_1/new/flexible_clock.v:32]
+INFO: [Synth 8-5544] ROM "animationDone" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "activate_dice_spin" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "twentyFiveMHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fiveHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oneHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element sixPointFiveMHz/output_clock_reg was removed.  [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/sources_1/new/flexible_clock.v:32]
+INFO: [Synth 8-5544] ROM "animationDone" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "activate_dice_spin" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "twentyFiveMHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fiveHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oneHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "player1_lefthome" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "player2_lefthome" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "player3_lefthome" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "player4_lefthome" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clk2hz_module/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk1hz_module/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element clk2hz_module/output_clock_reg was removed.  [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/sources_1/new/flexible_clock.v:32]
+INFO: [Synth 8-5545] ROM "nolabel_line163/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line164/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line166/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line167/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line168/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line169/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line170/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line171/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line172/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk25mhz_module/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk6p25mhz_module/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "lfsr_reg" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "twentyFiveMHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fiveHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oneHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "lfsr_reg" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "twentyFiveMHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fiveHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oneHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "lfsr_reg" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "twentyFiveMHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fiveHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oneHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "lfsr_reg" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "twentyFiveMHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fiveHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oneHz/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk2hz_module/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk1hz_module/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncerL/debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncerL/debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncerR/debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncerR/debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncerC/debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncerC/debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncerD/debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncerD/debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line59/nolabel_line22/debouncerL/debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line59/nolabel_line22/debouncerL/debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line59/nolabel_line22/debouncerR/debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line59/nolabel_line22/debouncerR/debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line59/nolabel_line22/debouncerC/debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line59/nolabel_line22/debouncerC/debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line59/nolabel_line22/debouncerD/debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line59/nolabel_line22/debouncerD/debounce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line59/nolabel_line22/nolabel_line51/anodeClk/slow_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "oled_unit_A/fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "oled_unit_A/fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line163/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line164/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line166/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line167/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line168/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line169/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line170/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line171/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line172/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk25mhz_module/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk6p25mhz_module/output_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design main has unconnected port JC[2]
+WARNING: [Synth 8-3331] design main has unconnected port LD[15]
+WARNING: [Synth 8-3331] design main has unconnected port LD[14]
+WARNING: [Synth 8-3331] design main has unconnected port LD[13]
+WARNING: [Synth 8-3331] design main has unconnected port LD[12]
+WARNING: [Synth 8-3331] design main has unconnected port LD[11]
+WARNING: [Synth 8-3331] design main has unconnected port LD[10]
+WARNING: [Synth 8-3331] design main has unconnected port LD[9]
+WARNING: [Synth 8-3331] design main has unconnected port sw8
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line65/player3/\requiredSteps_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line65/player2/\requiredSteps_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line65/player1/\requiredSteps_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line65/player4/\requiredSteps_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line65/player3/\player_leftX_reg[0] )
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player3/player_bottomY_reg[1]' (FDE) to 'nolabel_line65/player3/player_bottomY_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player3/player_rightX_reg[0]' (FDE) to 'nolabel_line65/player3/player_bottomY_reg[6]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line65/player1/\player_leftX_reg[0] )
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player1/player_bottomY_reg[1]' (FDE) to 'nolabel_line65/player1/player_bottomY_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player1/player_rightX_reg[0]' (FDE) to 'nolabel_line65/player1/player_bottomY_reg[6]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line65/player2/\player_leftX_reg[0] )
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player2/player_bottomY_reg[1]' (FDE) to 'nolabel_line65/player2/player_bottomY_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player2/player_rightX_reg[0]' (FDE) to 'nolabel_line65/player2/player_bottomY_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player1/player_leftX_reg[7]' (FDE) to 'nolabel_line65/player1/player_bottomY_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player1/player_bottomY_reg[6]' (FDE) to 'nolabel_line65/player1/player_topY_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player1/player_topY_reg[6]' (FDE) to 'nolabel_line65/player1/player_rightX_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line65/player1/\player_rightX_reg[7] )
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player2/player_leftX_reg[7]' (FDE) to 'nolabel_line65/player2/player_bottomY_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player2/player_bottomY_reg[6]' (FDE) to 'nolabel_line65/player2/player_topY_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player2/player_topY_reg[6]' (FDE) to 'nolabel_line65/player2/player_rightX_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line65/player2/\player_rightX_reg[7] )
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player3/player_leftX_reg[7]' (FDE) to 'nolabel_line65/player3/player_bottomY_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player3/player_bottomY_reg[6]' (FDE) to 'nolabel_line65/player3/player_topY_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player3/player_topY_reg[6]' (FDE) to 'nolabel_line65/player3/player_rightX_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line65/player3/\player_rightX_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line65/player4/\player_leftX_reg[0] )
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player4/player_bottomY_reg[1]' (FDE) to 'nolabel_line65/player4/player_bottomY_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player4/player_rightX_reg[0]' (FDE) to 'nolabel_line65/player4/player_bottomY_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player4/player_leftX_reg[7]' (FDE) to 'nolabel_line65/player4/player_bottomY_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player4/player_bottomY_reg[6]' (FDE) to 'nolabel_line65/player4/player_topY_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/player4/player_topY_reg[6]' (FDE) to 'nolabel_line65/player4/player_rightX_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line65/player4/\player_rightX_reg[7] )
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/oled_gameGrid_reg[0]' (FDS) to 'nolabel_line65/oled_gameGrid_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[0]' (FDE) to 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[11]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[0]' (FDE) to 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[11]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[0]' (FDE) to 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[11]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[0]' (FDE) to 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[11]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/oled_gameGrid_reg[1]' (FDS) to 'nolabel_line65/oled_gameGrid_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[1]' (FDE) to 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[1]' (FDE) to 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[1]' (FDE) to 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[1]' (FDE) to 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/oled_gameGrid_reg[2]' (FDS) to 'nolabel_line65/oled_gameGrid_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[2]' (FDE) to 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[9]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[2]' (FDE) to 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[9]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[2]' (FDE) to 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[9]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[2]' (FDE) to 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[9]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[4]' (FDE) to 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[9]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[4]' (FDE) to 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[9]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[4]' (FDE) to 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[9]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[4]' (FDE) to 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[9]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[5]' (FDE) to 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[11]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[5]' (FDE) to 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[11]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[5]' (FDE) to 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[11]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[5]' (FDE) to 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[11]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/oled_gameGrid_reg[6]' (FDR) to 'nolabel_line65/oled_gameGrid_reg[10]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[6]' (FDE) to 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[11]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[6]' (FDE) to 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[11]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[6]' (FDE) to 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[11]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[6]' (FDE) to 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[11]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[7]' (FDE) to 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[9]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[7]' (FDE) to 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[9]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[7]' (FDE) to 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[9]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[7]' (FDE) to 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[9]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[8]' (FDE) to 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[8]' (FDE) to 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[8]' (FDE) to 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[8]' (FDE) to 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[10]' (FDE) to 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[10]' (FDE) to 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[10]' (FDE) to 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[10]' (FDE) to 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line65/nolabel_line203/p4_dice/\oled_output_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line65/nolabel_line203/p3_dice/\oled_output_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line65/nolabel_line203/p2_dice/\oled_output_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line65/nolabel_line203/p1_dice/\oled_output_reg[11] )
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/oled_gameGrid_reg[12]' (FDR) to 'nolabel_line65/oled_gameGrid_reg[13]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[12]' (FDE) to 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[14]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[12]' (FDE) to 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[14]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[12]' (FDE) to 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[14]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[12]' (FDE) to 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[14]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/oled_gameGrid_reg[13]' (FDR) to 'nolabel_line65/oled_gameGrid_reg[14]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[13]' (FDE) to 'nolabel_line65/nolabel_line203/p4_dice/oled_output_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[13]' (FDE) to 'nolabel_line65/nolabel_line203/p3_dice/oled_output_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[13]' (FDE) to 'nolabel_line65/nolabel_line203/p2_dice/oled_output_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[13]' (FDE) to 'nolabel_line65/nolabel_line203/p1_dice/oled_output_reg[15]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line65/oled_gameGrid_reg[14]' (FDR) to 'nolabel_line65/oled_gameGrid_reg[15]'
+WARNING: [Synth 8-3332] Sequential element (player_leftX_reg[0]) is unused and will be removed from module player1_movementFSM.
+WARNING: [Synth 8-3332] Sequential element (requiredSteps_reg[3]) is unused and will be removed from module player1_movementFSM.
+WARNING: [Synth 8-3332] Sequential element (player_rightX_reg[7]) is unused and will be removed from module player1_movementFSM.
+WARNING: [Synth 8-3332] Sequential element (player_leftX_reg[0]) is unused and will be removed from module player2_movementFSM.
+WARNING: [Synth 8-3332] Sequential element (requiredSteps_reg[3]) is unused and will be removed from module player2_movementFSM.
+WARNING: [Synth 8-3332] Sequential element (player_rightX_reg[7]) is unused and will be removed from module player2_movementFSM.
+WARNING: [Synth 8-3332] Sequential element (player_leftX_reg[0]) is unused and will be removed from module player3_movementFSM.
+WARNING: [Synth 8-3332] Sequential element (requiredSteps_reg[3]) is unused and will be removed from module player3_movementFSM.
+WARNING: [Synth 8-3332] Sequential element (player_rightX_reg[7]) is unused and will be removed from module player3_movementFSM.
+WARNING: [Synth 8-3332] Sequential element (player_leftX_reg[0]) is unused and will be removed from module player4_movementFSM.
+WARNING: [Synth 8-3332] Sequential element (requiredSteps_reg[3]) is unused and will be removed from module player4_movementFSM.
+WARNING: [Synth 8-3332] Sequential element (player_rightX_reg[7]) is unused and will be removed from module player4_movementFSM.
+WARNING: [Synth 8-3332] Sequential element (oled_output_reg[11]) is unused and will be removed from module diceModule__1.
+WARNING: [Synth 8-3332] Sequential element (oled_output_reg[11]) is unused and will be removed from module diceModule__2.
+WARNING: [Synth 8-3332] Sequential element (oled_output_reg[11]) is unused and will be removed from module diceModule__3.
+WARNING: [Synth 8-3332] Sequential element (oled_output_reg[11]) is unused and will be removed from module diceModule.
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line59/nolabel_line23/oled_data_reg[0]' (FDR) to 'powerUpMenu:/nolabel_line59/nolabel_line23/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line59/nolabel_line24/oled_data_reg[0]' (FD) to 'powerUpMenu:/nolabel_line59/nolabel_line24/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line41/oled_data_reg[0]' (FDR) to 'powerUpMenu:/nolabel_line55/nolabel_line41/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line37/oled_data_reg[0]' (FDR) to 'powerUpMenu:/nolabel_line55/nolabel_line37/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line39/oled_data_reg[0]' (FD) to 'powerUpMenu:/nolabel_line55/nolabel_line39/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line38/oled_data_reg[0]' (FDR) to 'powerUpMenu:/nolabel_line55/nolabel_line38/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line59/nolabel_line23/oled_data_reg[1]' (FDS) to 'powerUpMenu:/nolabel_line59/nolabel_line23/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line59/nolabel_line24/oled_data_reg[1]' (FD) to 'powerUpMenu:/nolabel_line59/nolabel_line24/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line41/oled_data_reg[1]' (FDR) to 'powerUpMenu:/nolabel_line55/nolabel_line41/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line37/oled_data_reg[1]' (FDS) to 'powerUpMenu:/nolabel_line55/nolabel_line37/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line39/oled_data_reg[1]' (FD) to 'powerUpMenu:/nolabel_line55/nolabel_line39/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line38/oled_data_reg[1]' (FDS) to 'powerUpMenu:/nolabel_line55/nolabel_line38/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line59/nolabel_line23/oled_data_reg[2]' (FDS) to 'powerUpMenu:/nolabel_line59/nolabel_line23/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line59/nolabel_line24/oled_data_reg[2]' (FD) to 'powerUpMenu:/nolabel_line59/nolabel_line24/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line41/oled_data_reg[2]' (FDR) to 'powerUpMenu:/nolabel_line55/nolabel_line41/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line37/oled_data_reg[2]' (FDS) to 'powerUpMenu:/nolabel_line55/nolabel_line37/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line39/oled_data_reg[2]' (FD) to 'powerUpMenu:/nolabel_line55/nolabel_line39/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line38/oled_data_reg[2]' (FDS) to 'powerUpMenu:/nolabel_line55/nolabel_line38/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line59/nolabel_line23/oled_data_reg[3]' (FDS) to 'powerUpMenu:/nolabel_line59/nolabel_line23/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line59/nolabel_line24/oled_data_reg[3]' (FD) to 'powerUpMenu:/nolabel_line59/nolabel_line24/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line41/oled_data_reg[3]' (FDR) to 'powerUpMenu:/nolabel_line55/nolabel_line41/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line37/oled_data_reg[3]' (FDS) to 'powerUpMenu:/nolabel_line55/nolabel_line37/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line39/oled_data_reg[3]' (FD) to 'powerUpMenu:/nolabel_line55/nolabel_line39/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line38/oled_data_reg[3]' (FDS) to 'powerUpMenu:/nolabel_line55/nolabel_line38/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line59/nolabel_line23/oled_data_reg[4]' (FDS) to 'powerUpMenu:/nolabel_line59/nolabel_line23/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line59/nolabel_line24/oled_data_reg[4]' (FD) to 'powerUpMenu:/nolabel_line59/nolabel_line24/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line37/oled_data_reg[4]' (FDS) to 'powerUpMenu:/nolabel_line55/nolabel_line37/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line55/nolabel_line39/oled_data_reg[4]' (FD) to 'powerUpMenu:/nolabel_line55/nolabel_line39/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'powerUpMenu:/nolabel_line59/nolabel_line23/oled_data_reg[5]' (FDR) to 'powerUpMenu:/nolabel_line59/nolabel_line23/oled_data_reg[6]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (powerUpMenu:/\nolabel_line59/nolabel_line23 /\oled_data_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (powerUpMenu:/\nolabel_line59/nolabel_line24 /\oled_data_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (powerUpMenu:/nolabel_line55/nolabel_line41/\oled_data_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (powerUpMenu:/nolabel_line55/nolabel_line37/\oled_data_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (powerUpMenu:/nolabel_line55/nolabel_line39/\oled_data_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (powerUpMenu:/nolabel_line55/nolabel_line38/\oled_data_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (powerUpMenu:/nolabel_line57/\oled_data_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (powerUpMenu:/nolabel_line56/\oled_data_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (powerUpMenu:/\nolabel_line59/oled_data_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (powerUpMenu:/nolabel_line55/\oled_data_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (powerUpMenu:/\oled_data_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[11]) is unused and will be removed from module renderDoubleJump.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[11]) is unused and will be removed from module renderDoubleDice.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[11]) is unused and will be removed from module renderSkipTurn.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[11]) is unused and will be removed from module renderPlayerBox.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[11]) is unused and will be removed from module powerUpIcons.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[11]) is unused and will be removed from module selectPowerUp.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[11]) is unused and will be removed from module message.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[11]) is unused and will be removed from module printReviveMessage.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[11]) is unused and will be removed from module renderReviveIcon.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line59/oled_data_reg[11]) is unused and will be removed from module powerUpMenu.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[11]) is unused and will be removed from module powerUpMenu.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\audio_out_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/nolabel_line100/\winScreenOled_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (winScreenOled_reg[11]) is unused and will be removed from module winScreen.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line45/skipFlag_reg) is unused and will be removed from module selectPowerUp.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line59/nolabel_line22/endPlayerTurn_reg) is unused and will be removed from module powerUpMenu.
+WARNING: [Synth 8-3332] Sequential element (skipSelected_reg) is unused and will be removed from module powerUpMenu.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:50 ; elapsed = 00:05:35 . Memory (MB): peak = 3859.875 ; gain = 3602.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------------+----------------+---------------+----------------+
+|Module Name         | RTL Object     | Depth x Width | Implemented As | 
++--------------------+----------------+---------------+----------------+
+|player1_movementFSM | player_topY    | 64x7          | LUT            | 
+|player2_movementFSM | player_topY    | 64x7          | LUT            | 
+|player3_movementFSM | player_topY    | 64x7          | LUT            | 
+|player3_movementFSM | player_bottomY | 64x7          | LUT            | 
+|player4_movementFSM | player_bottomY | 64x7          | LUT            | 
+|player1_movementFSM | player_topY    | 64x7          | LUT            | 
+|player2_movementFSM | player_topY    | 64x7          | LUT            | 
+|player3_movementFSM | player_topY    | 64x7          | LUT            | 
+|player3_movementFSM | player_bottomY | 64x7          | LUT            | 
+|player4_movementFSM | player_bottomY | 64x7          | LUT            | 
++--------------------+----------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |powerUpMenu   |           4|      4359|
+|2     |game_grid     |           1|     10400|
+|3     |main__GCB1    |           1|      1887|
+|4     |main__GCB2    |           1|      1941|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:52 ; elapsed = 00:05:41 . Memory (MB): peak = 3859.875 ; gain = 3602.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:53 ; elapsed = 00:05:41 . Memory (MB): peak = 3859.875 ; gain = 3602.398
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |powerUpMenu   |           4|      4359|
+|2     |game_grid     |           1|     10400|
+|3     |main__GCB1    |           1|      1887|
+|4     |main__GCB2    |           1|      1941|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (nolabel_line203/p1_turn_reg[2]) is unused and will be removed from module game_grid.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line203/p1_turn_reg[1]) is unused and will be removed from module game_grid.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line203/p1_turn_reg[0]) is unused and will be removed from module game_grid.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line203/p2_turn_reg[3]) is unused and will be removed from module game_grid.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line203/p2_turn_reg[1]) is unused and will be removed from module game_grid.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line203/p2_turn_reg[0]) is unused and will be removed from module game_grid.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line203/p3_turn_reg[3]) is unused and will be removed from module game_grid.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line203/p3_turn_reg[2]) is unused and will be removed from module game_grid.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line203/p3_turn_reg[0]) is unused and will be removed from module game_grid.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line203/p4_turn_reg[3]) is unused and will be removed from module game_grid.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line203/p4_turn_reg[2]) is unused and will be removed from module game_grid.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line203/p4_turn_reg[1]) is unused and will be removed from module game_grid.
+INFO: [Synth 8-5966] Removing register instance (\nolabel_line56/nolabel_line45/powerUps_reg[3] ) from module (powerUpMenu) as it has self-loop and (\nolabel_line59/nolabel_line22/myPowerUp_reg[3] ) is actual driver [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/boxChooser.v:61]
+INFO: [Synth 8-5966] Removing register instance (\nolabel_line59/nolabel_line22/myPowerUp_reg[2] ) from module (powerUpMenu) as it has self-loop and (\nolabel_line56/nolabel_line45/powerUps_reg[2] ) is actual driver [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/reviveChoice.v:54]
+INFO: [Synth 8-5966] Removing register instance (\nolabel_line59/nolabel_line22/myPowerUp_reg[1] ) from module (powerUpMenu) as it has self-loop and (\nolabel_line56/nolabel_line45/powerUps_reg[1] ) is actual driver [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/reviveChoice.v:54]
+INFO: [Synth 8-5966] Removing register instance (\nolabel_line59/nolabel_line22/myPowerUp_reg[0] ) from module (powerUpMenu) as it has self-loop and (\nolabel_line56/nolabel_line45/powerUps_reg[0] ) is actual driver [E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.srcs/sources_1/imports/Downloads/powerUps.xpr/MODS/MODS.srcs/sources_1/new/reviveChoice.v:54]
+WARNING: [Synth 8-3332] Sequential element (nolabel_line56/nolabel_line45/player_idx_reg[2]) is unused and will be removed from module powerUpMenu.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:54 ; elapsed = 00:05:43 . Memory (MB): peak = 3859.875 ; gain = 3602.398
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:55 ; elapsed = 00:05:44 . Memory (MB): peak = 3859.875 ; gain = 3602.398
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:55 ; elapsed = 00:05:44 . Memory (MB): peak = 3859.875 ; gain = 3602.398
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:55 ; elapsed = 00:05:44 . Memory (MB): peak = 3859.875 ; gain = 3602.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:55 ; elapsed = 00:05:44 . Memory (MB): peak = 3859.875 ; gain = 3602.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:55 ; elapsed = 00:05:45 . Memory (MB): peak = 3859.875 ; gain = 3602.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:55 ; elapsed = 00:05:45 . Memory (MB): peak = 3859.875 ; gain = 3602.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                      | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|main        | nolabel_line245/temp1_reg[15] | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|main        | nolabel_line245/temp1_reg[9]  | 10     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     5|
+|2     |CARRY4 |   574|
+|3     |LUT1   |    80|
+|4     |LUT2   |   569|
+|5     |LUT3   |  1331|
+|6     |LUT4   |   936|
+|7     |LUT5   |  1291|
+|8     |LUT6   |  4459|
+|9     |MUXF7  |   431|
+|10    |MUXF8  |    25|
+|11    |SRL16E |     2|
+|12    |FDE_1  |    32|
+|13    |FDRE   |  2775|
+|14    |FDSE   |     4|
+|15    |IBUF   |    16|
+|16    |OBUF   |    31|
+|17    |OBUFT  |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------------+-------------------------+------+
+|      |Instance                    |Module                   |Cells |
++------+----------------------------+-------------------------+------+
+|1     |top                         |                         | 12569|
+|2     |  clk25mhz_module           |flexible_clock           |    50|
+|3     |  clk6p25mhz_module         |flexible_clock_0         |    52|
+|4     |  nolabel_line100           |winScreen                |    70|
+|5     |    nolabel_line28          |flexible_clock_120       |    63|
+|6     |  nolabel_line163           |flexible_clock_1         |    52|
+|7     |  nolabel_line164           |flexible_clock_2         |    55|
+|8     |  nolabel_line166           |flexible_clock_3         |    54|
+|9     |  nolabel_line167           |flexible_clock_4         |    54|
+|10    |  nolabel_line168           |flexible_clock_5         |    54|
+|11    |  nolabel_line169           |flexible_clock_6         |    54|
+|12    |  nolabel_line170           |flexible_clock_7         |    54|
+|13    |  nolabel_line171           |flexible_clock_8         |    53|
+|14    |  nolabel_line172           |flexible_clock_9         |    54|
+|15    |  nolabel_line174           |soundCounter             |    16|
+|16    |  nolabel_line245           |Audio_Output             |    38|
+|17    |  nolabel_line64            |pixel_index_to_cartesian |   221|
+|18    |  nolabel_line65            |game_grid                |  2392|
+|19    |    clk2hz_module           |flexible_clock_90        |    63|
+|20    |    nolabel_line203         |gameState                |  1514|
+|21    |      clk1hz_module         |flexible_clock_91        |    54|
+|22    |      clk2hz_module         |flexible_clock_92        |    55|
+|23    |      gameStateDelayCounter |counter1s                |    36|
+|24    |      p1_dice               |diceModule               |   300|
+|25    |        delayCounter        |counter2s_113            |     9|
+|26    |        fiveHz              |flexible_clock_114       |    55|
+|27    |        nolabel_line50      |counterFiveHz_115        |    22|
+|28    |        nolabel_line51      |counterOneHz_116         |     8|
+|29    |        nolabel_line62      |LFSR_117                 |    84|
+|30    |        oneHz               |flexible_clock_118       |    54|
+|31    |        twentyFiveMHz       |flexible_clock_119       |    50|
+|32    |      p2_dice               |diceModule_93            |   296|
+|33    |        delayCounter        |counter2s_106            |     9|
+|34    |        fiveHz              |flexible_clock_107       |    55|
+|35    |        nolabel_line50      |counterFiveHz_108        |    22|
+|36    |        nolabel_line51      |counterOneHz_109         |     8|
+|37    |        nolabel_line62      |LFSR_110                 |    80|
+|38    |        oneHz               |flexible_clock_111       |    54|
+|39    |        twentyFiveMHz       |flexible_clock_112       |    50|
+|40    |      p3_dice               |diceModule_94            |   313|
+|41    |        delayCounter        |counter2s_99             |     9|
+|42    |        fiveHz              |flexible_clock_100       |    55|
+|43    |        nolabel_line50      |counterFiveHz_101        |    22|
+|44    |        nolabel_line51      |counterOneHz_102         |     8|
+|45    |        nolabel_line62      |LFSR_103                 |    83|
+|46    |        oneHz               |flexible_clock_104       |    54|
+|47    |        twentyFiveMHz       |flexible_clock_105       |    50|
+|48    |      p4_dice               |diceModule_95            |   303|
+|49    |        delayCounter        |counter2s                |     9|
+|50    |        fiveHz              |flexible_clock_96        |    55|
+|51    |        nolabel_line50      |counterFiveHz            |    22|
+|52    |        nolabel_line51      |counterOneHz             |     8|
+|53    |        nolabel_line62      |LFSR                     |    81|
+|54    |        oneHz               |flexible_clock_97        |    54|
+|55    |        twentyFiveMHz       |flexible_clock_98        |    50|
+|56    |    player1                 |player1_movementFSM      |   200|
+|57    |    player2                 |player2_movementFSM      |   201|
+|58    |    player3                 |player3_movementFSM      |   200|
+|59    |    player4                 |player4_movementFSM      |   203|
+|60    |  nolabel_line99            |startScreen              |    78|
+|61    |    nolabel_line30          |flexible_clock_89        |    63|
+|62    |  oled_unit_A               |Oled_Display             |  5971|
+|63    |  p1_powerup                |powerUpMenu              |   778|
+|64    |    nolabel_line55          |powerUpIcons_66          |    18|
+|65    |      nolabel_line37        |renderDoubleJump_85      |     2|
+|66    |      nolabel_line38        |renderDoubleDice_86      |     2|
+|67    |      nolabel_line39        |renderSkipTurn_87        |     3|
+|68    |      nolabel_line41        |renderPlayerBox_88       |     7|
+|69    |    nolabel_line56          |selectPowerUp_67         |   356|
+|70    |      nolabel_line45        |boxChooser_80            |   342|
+|71    |        debouncerC          |debouncer_81             |    76|
+|72    |        debouncerD          |debouncer_82             |    80|
+|73    |        debouncerL          |debouncer_83             |    75|
+|74    |        debouncerR          |debouncer_84             |    76|
+|75    |    nolabel_line57          |message_68               |     1|
+|76    |    nolabel_line59          |reviveMenu_69            |   394|
+|77    |      nolabel_line22        |reviveChoice_70          |   379|
+|78    |        debouncerC          |debouncer_73             |    75|
+|79    |        debouncerD          |debouncer_74             |    77|
+|80    |        debouncerL          |debouncer_75             |    74|
+|81    |        debouncerR          |debouncer_76             |    73|
+|82    |        nolabel_line51      |segementChoiceDisplay_77 |    66|
+|83    |          anodeClk          |variable_clk_78          |    54|
+|84    |          nolabel_line35    |anodeIdx_79              |    12|
+|85    |      nolabel_line23        |printReviveMessage_71    |     1|
+|86    |      nolabel_line24        |renderReviveIcon_72      |     3|
+|87    |  p2_powerup                |powerUpMenu_10           |   781|
+|88    |    nolabel_line55          |powerUpIcons_43          |    17|
+|89    |      nolabel_line37        |renderDoubleJump_62      |     2|
+|90    |      nolabel_line38        |renderDoubleDice_63      |     1|
+|91    |      nolabel_line39        |renderSkipTurn_64        |     3|
+|92    |      nolabel_line41        |renderPlayerBox_65       |     7|
+|93    |    nolabel_line56          |selectPowerUp_44         |   356|
+|94    |      nolabel_line45        |boxChooser_57            |   342|
+|95    |        debouncerC          |debouncer_58             |    76|
+|96    |        debouncerD          |debouncer_59             |    80|
+|97    |        debouncerL          |debouncer_60             |    75|
+|98    |        debouncerR          |debouncer_61             |    76|
+|99    |    nolabel_line57          |message_45               |     1|
+|100   |    nolabel_line59          |reviveMenu_46            |   398|
+|101   |      nolabel_line22        |reviveChoice_47          |   383|
+|102   |        debouncerC          |debouncer_50             |    75|
+|103   |        debouncerD          |debouncer_51             |    77|
+|104   |        debouncerL          |debouncer_52             |    74|
+|105   |        debouncerR          |debouncer_53             |    73|
+|106   |        nolabel_line51      |segementChoiceDisplay_54 |    70|
+|107   |          anodeClk          |variable_clk_55          |    54|
+|108   |          nolabel_line35    |anodeIdx_56              |    16|
+|109   |      nolabel_line23        |printReviveMessage_48    |     1|
+|110   |      nolabel_line24        |renderReviveIcon_49      |     3|
+|111   |  p3_powerup                |powerUpMenu_11           |   781|
+|112   |    nolabel_line55          |powerUpIcons_20          |    17|
+|113   |      nolabel_line37        |renderDoubleJump_39      |     2|
+|114   |      nolabel_line38        |renderDoubleDice_40      |     1|
+|115   |      nolabel_line39        |renderSkipTurn_41        |     3|
+|116   |      nolabel_line41        |renderPlayerBox_42       |     7|
+|117   |    nolabel_line56          |selectPowerUp_21         |   356|
+|118   |      nolabel_line45        |boxChooser_34            |   342|
+|119   |        debouncerC          |debouncer_35             |    76|
+|120   |        debouncerD          |debouncer_36             |    80|
+|121   |        debouncerL          |debouncer_37             |    75|
+|122   |        debouncerR          |debouncer_38             |    76|
+|123   |    nolabel_line57          |message_22               |     1|
+|124   |    nolabel_line59          |reviveMenu_23            |   398|
+|125   |      nolabel_line22        |reviveChoice_24          |   383|
+|126   |        debouncerC          |debouncer_27             |    75|
+|127   |        debouncerD          |debouncer_28             |    77|
+|128   |        debouncerL          |debouncer_29             |    74|
+|129   |        debouncerR          |debouncer_30             |    73|
+|130   |        nolabel_line51      |segementChoiceDisplay_31 |    70|
+|131   |          anodeClk          |variable_clk_32          |    54|
+|132   |          nolabel_line35    |anodeIdx_33              |    16|
+|133   |      nolabel_line23        |printReviveMessage_25    |     1|
+|134   |      nolabel_line24        |renderReviveIcon_26      |     3|
+|135   |  p4_powerup                |powerUpMenu_12           |   781|
+|136   |    nolabel_line55          |powerUpIcons             |    17|
+|137   |      nolabel_line37        |renderDoubleJump         |     2|
+|138   |      nolabel_line38        |renderDoubleDice         |     1|
+|139   |      nolabel_line39        |renderSkipTurn           |     3|
+|140   |      nolabel_line41        |renderPlayerBox          |     7|
+|141   |    nolabel_line56          |selectPowerUp            |   356|
+|142   |      nolabel_line45        |boxChooser               |   342|
+|143   |        debouncerC          |debouncer_16             |    76|
+|144   |        debouncerD          |debouncer_17             |    80|
+|145   |        debouncerL          |debouncer_18             |    75|
+|146   |        debouncerR          |debouncer_19             |    76|
+|147   |    nolabel_line57          |message                  |     1|
+|148   |    nolabel_line59          |reviveMenu               |   398|
+|149   |      nolabel_line22        |reviveChoice             |   383|
+|150   |        debouncerC          |debouncer                |    75|
+|151   |        debouncerD          |debouncer_13             |    77|
+|152   |        debouncerL          |debouncer_14             |    74|
+|153   |        debouncerR          |debouncer_15             |    73|
+|154   |        nolabel_line51      |segementChoiceDisplay    |    70|
+|155   |          anodeClk          |variable_clk             |    54|
+|156   |          nolabel_line35    |anodeIdx                 |    16|
+|157   |      nolabel_line23        |printReviveMessage       |     1|
+|158   |      nolabel_line24        |renderReviveIcon         |     3|
++------+----------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:55 ; elapsed = 00:05:45 . Memory (MB): peak = 3859.875 ; gain = 3602.398
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 58 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:29 ; elapsed = 00:05:04 . Memory (MB): peak = 3859.875 ; gain = 402.648
+Synthesis Optimization Complete : Time (s): cpu = 00:02:55 ; elapsed = 00:05:48 . Memory (MB): peak = 3859.875 ; gain = 3602.398
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1078 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  FDE_1 => FDRE (inverted pins: C): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+392 Infos, 134 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:57 ; elapsed = 00:05:51 . Memory (MB): peak = 3859.875 ; gain = 3615.383
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'E:/Stuff/School/y2s2/ee2026/Project/ludo_game/final/EE2026_final_project/EE2026_final_project.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 3859.875 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  6 22:05:43 2024...
